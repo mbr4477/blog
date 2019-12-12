@@ -7,8 +7,8 @@ date: "2019-12-12T11:05-05"
 ## A Brief Introduction
 I've considered starting a blog more than once over the past few years. I think the main issue I've encountered is settling on a cohesive theme and subject matter for my posts, whether that's more personal comments, tutorials, project notes, or discussions of interesting articles I've read. That being said, *there is no single theme to this site's content*. To remove any barriers that might keep me from writing, I've decided to approach this blog without a single focus. Hopefully that results in a interesting and diverse array of articles and content.
 
-## So Why Use Gatsby and Github Pages?
-I'm building this blog with Gatsby and hosting it via Github Pages with a custom domain. There are two reasons for this. First, it's (virtually) free. Other than renewing my domain, I have no overhead. Using Gatsby is dead simple. With one of the starter projects, I just need to tweak the React components and start dropping in markdown posts, and BOOM, I've got a blog. 
+## So Why Use Gatsby and ~~Github Pages~~ Netlify?
+I'm building this blog with Gatsby and hosting it via ~~Github Pages~~ Netlify[^1] with a custom domain. There are two reasons for this. First, it's (virtually) free. Other than renewing my domain, I have no overhead. Using Gatsby is dead simple. With one of the starter projects, I just need to tweak the React components and start dropping in markdown posts, and BOOM, I've got a blog. 
 
 ## Also, Markdown is the Best
 Speaking of markdown, this text-based format is my favorite document writing tool because of its simplicity and lack of dependency on external tools. Sure, looking at this
@@ -37,3 +37,5 @@ I've got a few things on a todo list to finish bringing this blog online.
 - Add syntax highlighting for code blocks
 - Change up the theming/typography
 - Figure out how to add static pages, and create one as an About Me
+
+[^1]: I quickly switched to Netlify and am using Github to host my content. The main factor was that although Github could host my static page, deploying would be a two-step process with two repos -- one for the source and one for the generated static site.
