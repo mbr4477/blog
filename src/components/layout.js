@@ -5,17 +5,19 @@ import { rhythm, scale } from "../utils/typography"
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
+    const { location, title, subtitle, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
     if (location.pathname === rootPath) {
       header = (
+        <>
         <h1
           style={{
             ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
+            marginBottom: 0,
           }}
         >
           <Link
@@ -29,6 +31,16 @@ class Layout extends React.Component {
             {title}
           </Link>
         </h1>
+        <h3
+          style={{
+            fontFamily: `Montserrat, sans-serif`,
+            marginTop: 0,
+            fontWeight: `normal`,
+          }}
+        >
+          <em>{subtitle}</em>
+        </h3>
+        </>
       )
     } else {
       header = (
