@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
+import "./layout.css"
 
 class Layout extends React.Component {
   render() {
@@ -31,23 +32,24 @@ class Layout extends React.Component {
             {title}
           </Link>
         </h1>
-        <h3
+        <h4
           style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
+            marginTop: 10,
             fontWeight: `normal`,
+            fontFamily: 'Playfair Display'
           }}
         >
-          <em>{subtitle}</em>
-        </h3>
+          <>{subtitle}</>
+        </h4>
         </>
       )
     } else {
       header = (
         <h3
           style={{
-            fontFamily: `Montserrat, sans-serif`,
+            fontFamily: 'Playfair Display',
             marginTop: 0,
+            fontWeight: 700,
           }}
         >
           <Link

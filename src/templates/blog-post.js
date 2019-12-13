@@ -5,12 +5,14 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import Tag from "../components/tag"
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
+    const tags = this.props.data.markdownRemark.frontmatter.tags
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -35,7 +37,7 @@ class BlogPostTemplate extends React.Component {
                 marginBottom: rhythm(1),
               }}
             >
-              {post.frontmatter.date}
+              {post.frontmatter.date} <small>{tags.map((tag) => <Tag>{tag}</Tag>)}</small>
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -97,6 +99,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
       }
     }
   }

@@ -68,7 +68,21 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <script>
+        {`MathJax = {
+          tex: {
+            inlineMath: [['$', '$']]
+          },
+          svg: {
+            fontCache: 'global'
+          }
+        }`}
+        </script>
+      <script type="text/javascript" id="MathJax-script" 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async>
+      </script>
+      </Helmet>
   )
 }
 

@@ -2,6 +2,7 @@
 title: Inital Commit
 description: I've considered starting a blog more than once over the past few years. Also, markdown is the best.
 date: "2019-12-12T11:05-05"
+tags: ["markdown"]
 ---
 
 ## A Brief Introduction
@@ -38,4 +39,4 @@ I've got a few things on a todo list to finish bringing this blog online.
 - Change up the theming/typography
 - Figure out how to add static pages, and create one as an About Me
 
-[^1]: I quickly switched to Netlify and am using Github to host my content. The main factor was that although Github could host my static page, deploying would be a two-step process with two repos -- one for the source and one for the generated static site.
+[^1]: I quickly switched to Netlify and am using Github to host my Gatsby project. The main factor was that although Github could host my static page, deploying would be a two-step process with two repos -- one for the source and one for the generated static site.
