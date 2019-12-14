@@ -1,5 +1,5 @@
 ---
-title: Inital Commit
+title: Initial Commit
 description: I've considered starting a blog more than once over the past few years. Also, markdown is the best.
 date: "2019-12-12T11:05-05"
 tags: ["markdown"]

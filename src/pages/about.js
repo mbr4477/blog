@@ -46,7 +46,7 @@ class About extends React.Component {
           I'm a machine learning PhD student at the University of Kentucky and an intern at NASA Johnson Space Center.
         </p>
         <p>
-          I'm interested in embedded systems, spaceflight, cosmology, apologetics, relativity, music production, robots, software development, startups, entrepreneurship, traveling, puns, and coffee.
+          I like embedded systems, spaceflight, cosmology, apologetics, music production, The Ohio State Buckeyes, the New York Yankees, machine learning, robots, software development, startups, entrepreneurship, traveling, puns, and coffee.
         </p>
         <p>
           I've built satellite attitude control software, quantum cryptography simulations, NASA test software, mobile apps, desktop apps, and autonomous ground vehicles. 

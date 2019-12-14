@@ -58,7 +58,7 @@ const Bio = () => {
         {` `}
         <Link to="/about">Get to know him</Link> or check out his <a href={`https://github.com/${social.github}`}>
           projects on GitHub
-        </a>
+        </a>.
       </p>
     </div>
   )
