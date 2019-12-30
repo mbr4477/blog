@@ -1,0 +1,11 @@
+article {
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 0px 5px 5px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: ease-in-out 0.5s;
+}
+
+article:hover {
+    transform: scale(1.05);
+}

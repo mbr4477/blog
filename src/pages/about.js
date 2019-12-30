@@ -5,6 +5,7 @@ import Image from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import { Button } from "carbon-components-react"
 
 class About extends React.Component {
   render() {
@@ -42,6 +43,7 @@ class About extends React.Component {
             I'm interested in everything.
           </h2>
         </div>
+        <Button>Carbon Button</Button>
         <p>
           I'm a machine learning PhD student at the University of Kentucky and an intern at NASA Johnson Space Center.
         </p>

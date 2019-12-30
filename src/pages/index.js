@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Tag from "../components/tag"
 import { rhythm } from "../utils/typography"
+import "./index.css"
 
 class BlogIndex extends React.Component {
   render() {
@@ -21,6 +22,7 @@ class BlogIndex extends React.Component {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
+          <Link style={{ boxShadow: `none`, textDecoration: `none`, color: `inherit` }} to={node.fields.slug}>
             <article key={node.fields.slug}>
               <header>
                 <h3
@@ -28,9 +30,7 @@ class BlogIndex extends React.Component {
                     marginBottom: rhythm(1 / 4),
                   }}
                 >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                     {title}
-                  </Link>
                 </h3>
                 <small>{node.frontmatter.date}</small>
                 <small>{node.frontmatter.tags.map(tag => <Tag>{tag}</Tag>)}</small>
@@ -43,6 +43,7 @@ class BlogIndex extends React.Component {
                 />
               </section>
             </article>
+          </Link>
           )
         })}
       </Layout>
