@@ -35,7 +35,6 @@ class Layout extends React.Component {
           style={{
             marginTop: 10,
             fontWeight: `normal`,
-            fontFamily: 'Playfair Display'
           }}
         >
           <>{subtitle}</>
@@ -75,7 +74,7 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer>
+        <footer style={{ marginTop: 20 }}>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>

@@ -1,10 +1,11 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Tag from "../components/tag"
+import Image from "gatsby-image"
 import { rhythm } from "../utils/typography"
 import "./index.css"
 
@@ -14,16 +15,21 @@ class BlogIndex extends React.Component {
     const siteTitle = data.site.siteMetadata.title
     const subtitle = data.site.siteMetadata.subtitle
     const posts = data.allMarkdownRemark.edges
-
     return (
       <Layout location={this.props.location} title={siteTitle} subtitle={subtitle}>
         <SEO title="All posts" />
         <Bio />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
+          const image = node.frontmatter.featuredImage
           return (
           <Link style={{ boxShadow: `none`, textDecoration: `none`, color: `inherit` }} to={node.fields.slug}>
-            <article key={node.fields.slug}>
+            <article key={node.fields.slug} className="index-article">
+              {
+                image ? <Image 
+                  fluid={image.childImageSharp.fluid}
+                  style={{ maxHeight: 200 }} /> : undefined
+              }
               <header>
                 <h3
                   style={{
@@ -73,6 +79,13 @@ export const pageQuery = graphql`
             title
             description
             tags
+            featuredImage {
+              childImageSharp {
+                fluid(maxHeight: 400) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

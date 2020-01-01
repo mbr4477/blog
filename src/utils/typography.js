@@ -15,39 +15,35 @@ delete Wordpress2016.googleFonts
 const typography = new Typography({
   googleFonts: [
     {
-      name: 'Playfair Display',
+      name: 'Oxygen',
       styles: [
         '400',
-      ]
-    },
-    {
-      name: 'Montserrat',
-      styles: [
         '700',
       ]
     },
     {
-      name: 'Lora',
+      name: 'Merriweather',
       styles: [
-        '400'
+        '400',
+        '700'
       ]
     }
   ],
-  baseFontSize: "18px",
+  baseFontSize: "16px",
   baseLineHeight: 1.666,
   headerFontFamily: [
-    "Montserrat",
-    "serif",
+    "Oxygen",
+    "sans-serif",
   ],
-  bodyFontFamily: ["Lora", "Times New Roman", "serif"],
+  bodyFontFamily: ["Merriweather", "Times New Roman", "serif"],
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
-    h1: {
-      fontFamily: ['Playfair Display', 'sans-serif'].join(','),
-      fontWeight: 400
-    },
-    'h2,h3,h4,h5': {
-      fontWeight: 700
-    }
+    // h1: {
+    //   fontFamily: ['Playfair Display', 'sans-serif'].join(','),
+    //   fontWeight: 400
+    // },
+    // 'h2,h3,h4,h5': {
+    //   fontWeight: 700
+    // }
   })
 })
 

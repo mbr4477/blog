@@ -1,11 +1,19 @@
-article {
+.index-article {
     box-shadow: rgba(0, 0, 0, 0.03) 0px 0px 5px 5px;
-    padding: 20px;
     margin-top: 20px;
     border-radius: 10px;
     transition: ease-in-out 0.5s;
+    overflow: hidden;
 }
 
-article:hover {
+.index-article header {
+    padding: 20px;
+}
+
+.index-article section {
+    padding: 0px 20px 5px 20px;
+}
+
+.index-article:hover {
     transform: scale(1.05);
 }
