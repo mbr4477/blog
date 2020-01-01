@@ -45,7 +45,6 @@ class Layout extends React.Component {
       header = (
         <h3
           style={{
-            fontFamily: 'Playfair Display',
             marginTop: 0,
             fontWeight: 700,
           }}
