@@ -4,6 +4,7 @@
     border-radius: 10px;
     transition: ease-in-out 0.5s;
     overflow: hidden;
+    background: white;
 }
 
 .index-article header {

@@ -18,7 +18,6 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle} subtitle={subtitle}>
         <SEO title="All posts" />
-        <Bio />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           const image = node.frontmatter.featuredImage
@@ -52,6 +51,8 @@ class BlogIndex extends React.Component {
           </Link>
           )
         })}
+        <hr style={{ marginTop: rhythm(2) }}/>
+        <Bio />
       </Layout>
     )
   }
