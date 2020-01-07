@@ -1,11 +1,11 @@
 ---
 title: Apparently You Can Hard Brick SD Cards
-description: And there's no way to reset them. That's a new one for me.  
+description: "Recently, I was attempting to setup a Raspberry Pi Zero W with the latest Raspbian Buster Lite image and ran into an ... uh ... issue."
 date: "2019-12-29T07:58"
 tags: ["raspberry-pi"]
 ---
 
-Recently, I was attempted to setup a Raspberry Pi Zero W with the latest Raspbian Buster Lite image and ran into an ... uh ... issue. After dropping in an empty `ssh` file and a `wpa_supplicant.conf` to enable headless access over WiFi, I logged in, expanded the filesystem to the full SD card capacity (16 gigs in my case), rebooted and then ran the normally innocuous
+Recently, I was attempting to setup a Raspberry Pi Zero W with the latest Raspbian Buster Lite image and ran into an ... uh ... issue. After dropping in an empty `ssh` file and a `wpa_supplicant.conf` to enable headless access over WiFi, I logged in, expanded the filesystem to the full SD card capacity (16 gigs in my case), rebooted and then ran the normally innocuous
 
 ```bash
 sudo apt-get update

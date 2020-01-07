@@ -7,6 +7,10 @@ import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
 class About extends React.Component {
+  copyEmail() {
+    console.log('clip')
+    navigator.clipboard.writeText("matthew.russell@uky.edu").then()
+  }
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -38,6 +42,9 @@ class About extends React.Component {
           <h2>
             I'm interested in everything.
           </h2>
+        </div>
+        <div style={{textAlign: 'center', marginBottom: 20}}>
+          <button onClick={(e) => { this.copyEmail() } }>Copy Email to Clipboard</button>
         </div>
         <p>
           I'm a machine learning PhD student at the University of Kentucky and an intern at NASA Johnson Space Center.

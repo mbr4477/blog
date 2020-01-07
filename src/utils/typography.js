@@ -37,13 +37,9 @@ const typography = new Typography({
   ],
   bodyFontFamily: ["Merriweather", "Times New Roman", "serif"],
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
-    // h1: {
-    //   fontFamily: ['Playfair Display', 'sans-serif'].join(','),
-    //   fontWeight: 400
-    // },
-    // 'h2,h3,h4,h5': {
-    //   fontWeight: 700
-    // }
+    'button': {
+      fontFamily: 'Oxygen, sans-serif'
+    }
   })
 })
 
