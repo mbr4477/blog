@@ -6,14 +6,7 @@ tags: ["science fair"]
 featuredImage: IMAG0951.jpg
 ---
 
-I could've titled this post "10 Can't Miss Tips for Blowing Away Your Science Fair Competition" but I'm not into clickbait titles and checklists. Plus that doesn't seem very sportsmanlike (or scientistlike? :thinking:). First, let's address the ethos question I know you're thinking...
-
-## Why Should You Care What I Have to Say?
-You don't have to listen to a thing I recommend. And you might win. Such is the nature of competitions that include subjective judging. However, these suggestions are motivated from really wanting to see students succeed at science and engineering, learn a rigorous process, and see how fun it can be. 
-
-Beyond that, I won two overall state-level awards in middle school (yes, science fair is the only time you can cite middle school accomplishments) and a high school overall award in one of Kentucky's top two most competitive regions. Two of my three high school projects took me to the [International Science and Engineering Fair](https://www.societyforscience.org/isef/) (ISEF), and I placed in the grand awards my senior year. I was homeschooled (interpret that how you may), so I didn't just hop into a university lab with access to ridiculous equipment. I had help in the way of invaluable advice from college faculty and teachers, but that's transferable knowledge and precisely why I'm writing this article.
-
-If you're thinking, "Yeah, but you're from Kentucky," realize that Kentucky delegations to ISEF place near the top every year in per capita awards. Look it up. We're not dumb :sunglasses:. So let's dive into it.
+I could've titled this post "10 Can't Miss Tips for Blowing Away Your Science Fair Competition" but I'm not into clickbait titles and checklists. Plus that doesn't seem very sportsmanlike (or scientistlike? :thinking:). These suggestions are motivated from really wanting to see students succeed at science and engineering, learn a rigorous process, and see how fun it can be. My thoughts are drawn from my experience in state-level competitions in middle school and two trips to the [International Science and Engineering Fair](https://www.societyforscience.org/isef/) (ISEF), where placed in the grand awards my senior year. I was homeschooled (interpret that how you may), so I didn't just hop into a university lab with access to ridiculous equipment. I had help in the way of invaluable advice from college faculty and teachers, but that's transferable knowledge and precisely why I'm writing this article. So let's dive into it.
 
 ![isef junior](IMAG0158.jpg)
 <p style="text-align: center;"><em>My junior-year project at ISEF 2013 in Phoenix</em></p>
