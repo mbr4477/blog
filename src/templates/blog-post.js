@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
+import Image from "gatsby-image"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -13,15 +13,32 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
     const tags = this.props.data.markdownRemark.frontmatter.tags
-
+    const image = this.props.data.markdownRemark.frontmatter.featuredImage
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
+        {
+          image ? <Image 
+            fluid={image.childImageSharp.fluid}
+            style={{ 
+              position: `absolute`, 
+              top: 0,
+              left: 0, 
+              width: `100%`, 
+              height: 350,
+              objectFit: `cover`,
+              objectPosition: `center center`,
+              zIndex: -1,
+              filter: `brightness(70%)`
+            }} /> : <p/>
+        }
         <article>
-          <header>
+          <header style={
+            image ? { marginTop: 280 } : {}
+          }>
             <h1
               style={{
                 marginTop: rhythm(1),
@@ -100,6 +117,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         tags
+        featuredImage {
+          childImageSharp {
+            fluid(maxHeight: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

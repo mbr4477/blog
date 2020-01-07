@@ -75,42 +75,51 @@ const Layout = (props) => {
     )
   } else {
     header = (
-      <h3
+      <div style={{
+        background: `black`,
+        padding: `20px 10%`
+      }}>
+        <h3
         style={{
-          marginTop: 0,
           fontWeight: 700,
+          margin: 0,
+          color: `white`
         }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
         >
-          {title}
-        </Link>
-      </h3>
+          <Link
+            style={{
+              boxShadow: `none`,
+              textDecoration: `none`,
+              color: `inherit`,
+            }}
+            to={`/`}
+          >
+            {title.toLowerCase()}
+          </Link>
+        </h3>
+      </div>
+      
     )
   }
   return (
-    <div
-      style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: rhythm(30),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-      }}
-    >
+    <>
       <header>{header}</header>
-      <main>{children}</main>
-      <footer style={{ marginTop: 20 }}>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
-    </div>
+      <div
+        style={{
+          marginLeft: `auto`,
+          marginRight: `auto`,
+          maxWidth: rhythm(30),
+          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+        }}
+      >
+        <main>{children}</main>
+        <footer style={{ marginTop: 20 }}>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </footer>
+      </div>
+    </>
   )
 }
 
