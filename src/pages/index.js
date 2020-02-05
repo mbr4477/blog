@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -68,7 +68,10 @@ export const pageQuery = graphql`
         subtitle
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "\/content/blog\/"} },
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           excerpt

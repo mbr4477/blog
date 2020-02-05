@@ -1,6 +1,6 @@
 ---
 title: ALBERT - Alexa-controlled LEGO Biological ExpeRimenT
-description: "Hackster recently (read: September) announced a LEGO MINDSTORMS EV3 and Alexa challenge."
+description: "(UPDATE: I didn't win.) Hackster recently (read: September) announced a LEGO MINDSTORMS EV3 and Alexa challenge. "
 date: "2019-12-24T20:31"
 tags: ["ev3", "space", "challenge"]
 featuredImage: featured.jpg

@@ -4,6 +4,7 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
 import Image from "gatsby-image"
 import "./layout.css"
+import "katex/dist/katex.min.css"
 
 const Layout = (props) => {
   const data = useStaticQuery(graphql`
