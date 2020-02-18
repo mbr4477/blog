@@ -129,6 +129,7 @@ Here's what I did to get the [WordCount](https://docs.cloudera.com/documentation
    A popup should ask if you want to enable auto-import when the Gradle file changes. Click to enable it.
 4. Right click the package you created in step 2, and select New > Kotlin File/Class Name the file `WordCount.kt`. 
 5. Here's the Kotlin code equivalent of the Java example that should go inside `WordCount.kt`. Notice that the class names are the same and the functions/properties of the classes are basically the same as well. Kotlin is basically a more-concise Java with newer language features. I didn't comment the code very well (or at all), but the code is similar enough that the explanation from the WordCount tutorial still applies.
+
 ```kotlin
 package dev.mruss.wordcount
 
