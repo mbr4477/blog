@@ -3,7 +3,9 @@ title: Setting Up Single-Node Hadoop on an Ubuntu VM (Windows 10 Host)
 description: "You could use the Cloudera Quickstart VM, but then you wouldn't be able to use Kotlin."
 date: "2020-02-17T18:28"
 tags: ["hadoop", "ubuntu"]
+featuredImage: elephant.jpg
 ---
+Photo by AJ Robbie on Unsplash
 
 For my Large-Scale Data Science course this semester, I need to use a single-node Hadoop system. The go-to option is the Cloudera Quickstart VM, but it doesn't support Java 8 and comes with Hadoop 2. Kotlin requires Java 8, so I decided to look for a way to setup a custom Ubuntu VM.
 
