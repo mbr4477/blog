@@ -13,6 +13,14 @@ The Hadoop install instructions were adapted from [here](https://dev.to/awwsmm/i
 
 Make sure you already have VirtualBox installed.
 
+> **UPDATE 2020-02-22**
+> 
+> After a few VM boots, my guest additions quit working. After banging my head against the proverbial wall for too long, here's what fixed it for me:
+> 1. Upgrade VirtualBox to the latest version
+> 2. Remove the distro guest DKMS package: `sudo apt-get remove virtualbox-guest-dkms`
+> 3. Insert the Guest Additions CD using the VM menu and run the CD to install
+> 4. Reboot the guest VM: `sudo reboot`
+
 # Download Ubuntu 18.04 LTS
 Grab the latest desktop ISO image from [here](https://ubuntu.com/download/desktop/thank-you?version=18.04.4&architecture=amd64).
 
@@ -197,7 +205,6 @@ class WordCount : Configured(), Tool {
         manifest {
             attributes 'Main-Class': 'dev.mruss.wordcount.WordCountKt'
         }
-        archivesBaseName = project.name + "-all"
         from {
             configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it)}
         }
@@ -233,4 +240,4 @@ class WordCount : Configured(), Tool {
    ```
 
 # Conclusion
-If everything went according to plan, you now have a Hadoop
+If everything went according to plan, you now have a Hadoop system running on an Ubuntu VM in VirtualBox! Note that this is will default to a single node, single process execution, as described [here](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html#Standalone_Operation). For lots more information about Kotlin, check out [kotlinlang.org](http://kotlinlang.org/).

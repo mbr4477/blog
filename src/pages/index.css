@@ -30,3 +30,11 @@ button:hover {
     background: darkslategray;
     color: white;
 }
+
+blockquote {
+    background: #fec;
+    color: #876;
+    padding: 10px 10px 10px 10px;
+    border-left: solid 4px;
+    margin-left: 0;
+}
