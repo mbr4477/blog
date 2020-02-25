@@ -18,12 +18,18 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle} subtitle={subtitle}>
         <SEO title="All posts" />
+        <article className="index-article" style={{ 
+          padding: `20px 15px 0px 15px`,
+          boxShadow: `none`
+        }}>
+          <Bio />
+        </article>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           const image = node.frontmatter.featuredImage
           return (
           <Link style={{ boxShadow: `none`, textDecoration: `none`, color: `inherit` }} to={node.fields.slug}>
-            <article key={node.fields.slug} className="index-article">
+            <article key={node.fields.slug} className="index-article grow">
               {
                 image ? <Image 
                   fluid={image.childImageSharp.fluid}
@@ -52,7 +58,6 @@ class BlogIndex extends React.Component {
           )
         })}
         <hr style={{ marginTop: rhythm(2) }}/>
-        <Bio />
       </Layout>
     )
   }
