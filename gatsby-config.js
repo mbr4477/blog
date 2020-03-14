@@ -91,7 +91,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `I Have No Idea What I'm Doing`,
+        name: `I'm interested in everything.`,
         short_name: `mruss.dev`,
         start_url: `/`,
         background_color: `#ffffff`,
