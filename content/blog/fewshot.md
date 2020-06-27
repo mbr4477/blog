@@ -36,7 +36,7 @@ digraph G {
     features[label="Feature\nExtractor",width=1,height=2]
     classifier[label="Dog\nClassifier",width=1,height=2]  
   }
-  output[label="German Shepherd? | Gold Retriever? | Poodle?",shape=record]
+  output[label="German Shepherd? | Golden Retriever? | Poodle?",shape=record]
   input -> features
   features -> classifier [label="High-Level\n\"Dog Features\""]
   classifier -> output
