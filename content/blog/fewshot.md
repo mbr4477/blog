@@ -143,21 +143,31 @@ digraph G {
     dog2[label="a chocolate lab is dark\ncolored with short hair"]
     dog3[label="a corgie is short with\na long body"]
   }
-  desc_mapper[label="Description\nMapper",height=2]
-  image_mapper[label="Image\nMapper"]
-  dog1e[label="Description 1\nEncoding"]
-  dog2e[label="Description 2\nEncoding"]
-  dog3e[label="Description 3\nEncoding"]
+  subgraph {
+    desc_mapper[label="Description\nMapper",height=2]
+    image_mapper[label="Image\nMapper",height=2]
+    rank=same;
+    desc_mapper -> image_mapper [style=invis]
+  }
   compare[label="Encoding\nComparer",height=2]
   input[label="Unknown Image"]
-  unke[label="Unknown Dog\nEncoding"]
-  input:e -> image_mapper -> unke -> compare:n
+  input:e -> image_mapper:w
+  image_mapper:e -> unke:w
+  unke:e -> compare:s
   dog1:e -> desc_mapper -> dog1e:w
   dog2:e -> desc_mapper -> dog2e:w
   dog3:e -> desc_mapper -> dog3e:w
   dog1e:e -> compare
   dog2e:e -> compare
   dog3e:e -> compare
+  subgraph {
+    rank=same;
+    dog1e[label="Description 1\nEncoding"]
+    dog2e[label="Description 2\nEncoding"]
+    dog3e[label="Description 3\nEncoding"]
+    unke[label="Unknown Dog\nEncoding"]
+    dog1e -> dog2e -> dog3e -> unke [style=invis]
+  }
   output[label="Most Similar Dog Breed"]
   compare:e -> output:w
 }
