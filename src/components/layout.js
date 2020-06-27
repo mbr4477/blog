@@ -24,17 +24,19 @@ const Layout = (props) => {
   let header
 
   const headerImage = data.header
+  const isRoot = location.pathname === rootPath
 
-  if (location.pathname === rootPath) {
+  if (isRoot) {
+    document.onscroll = undefined
     header = (
       <>
-      <Image 
-        fluid={headerImage.childImageSharp.fluid} 
-        style={{ 
-          position: `absolute`, 
+      <Image
+        fluid={headerImage.childImageSharp.fluid}
+        style={{
+          position: `absolute`,
           top: 0,
-          left: 0, 
-          width: `100%`, 
+          left: 0,
+          width: `100%`,
           height: 350,
           objectFit: `cover`,
           objectPosition: `center center`,
@@ -75,31 +77,61 @@ const Layout = (props) => {
       </>
     )
   } else {
+    const scrollHandler = () => {
+      const bar = document.querySelector('#header-bar')
+      const padding = 10*(1 - Math.min(1., window.scrollY / 200.0)) + 10
+      const fontSize = 0.25*(1 - Math.min(1., window.scrollY / 200.0)) + 1.25
+      bar.style.paddingBottom = `${padding}px`
+      bar.style.paddingTop = `${padding}px`
+      bar.querySelector('h3').style.fontSize = `${fontSize}em`
+      console.log(bar.querySelector('h3'))
+
+      const progress = document.querySelector('#progress-bar')
+      const percent = window.scrollY / (document.body.offsetHeight - window.innerHeight);
+      progress.style.width = `${percent*100}vw`
+    }
+    document.onscroll = scrollHandler
     header = (
-      <div style={{
-        background: `black`,
-        padding: `20px 10%`
-      }}>
-        <h3
+      <div
         style={{
-          fontWeight: 700,
-          margin: 0,
-          color: `white`
-        }}
-        >
-          <Link
+          background: `black`,
+          position: `fixed`,
+          left: 0,
+          right: 0
+        }}>
+        <div
+          id={`header-bar`}
+          style={{
+            padding: `20px 10%`,
+          }}>
+          <h3
             style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title.toLowerCase()}
-          </Link>
-        </h3>
+              fontWeight: 400,
+              margin: 0,
+              color: `white`,
+              fontSize: `1.5em`
+            }}>
+            <Link
+              style={{
+                boxShadow: `none`,
+                textDecoration: `none`,
+                color: `inherit`,
+              }}
+              to={`/`}
+            >
+              {title.toLowerCase()}
+            </Link>
+          </h3>
+        </div>
+        <div
+          id={`progress-bar`}
+          style={{
+            width: `0vw`,
+            height: `4px`,
+            background: `#00AEFF`
+          }}>
+        </div>
       </div>
-      
     )
   }
   return (

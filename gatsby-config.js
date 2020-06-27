@@ -47,6 +47,7 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          'gatsby-remark-graphviz',
           {
             resolve: `gatsby-remark-prismjs`,
             options: {

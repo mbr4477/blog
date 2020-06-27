@@ -21,13 +21,13 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         {
-          image ? <Image 
+          image ? <Image
             fluid={image.childImageSharp.fluid}
-            style={{ 
-              position: `absolute`, 
+            style={{
+              position: `absolute`,
               top: 0,
-              left: 0, 
-              width: `100%`, 
+              left: 0,
+              width: `100%`,
               height: 350,
               objectFit: `cover`,
               objectPosition: `center center`,
@@ -37,7 +37,7 @@ class BlogPostTemplate extends React.Component {
         }
         <article>
           <header style={
-            image ? { marginTop: 280 } : {}
+            image ? { marginTop: 340 } : { marginTop: 50 }
           }>
             <h1
               style={{
