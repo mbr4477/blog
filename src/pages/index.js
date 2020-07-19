@@ -52,13 +52,19 @@ class BlogIndex extends React.Component {
             </Link>
             )
           })}
-          <article className="index-article" style={{ 
-            padding: `20px 15px 0x 15px`,
-            boxShadow: `none`,
-            fontSize: `0.8em`
-          }}>
-            <Bio />
-          </article>
+          
+            <article className="index-article" style={{ 
+              padding: `20px 15px 0x 15px`,
+              boxShadow: `none`,
+              fontSize: `1em`,
+              height: `auto`
+            }}>
+              <section>
+                <Bio />
+              </section>
+            </article>
+          
+          
         </div>
       </Layout>
     )

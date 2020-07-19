@@ -21,7 +21,8 @@ class About extends React.Component {
       <Layout location={this.props.location} title={siteTitle} subtitle={subtitle}>
         <SEO title="About" />
         <div style={{
-          textAlign: `center`
+          textAlign: `center`,
+          marginTop: rhythm(3),
         }}>
           <Image
             fixed={data.avatar.childImageSharp.fixed}

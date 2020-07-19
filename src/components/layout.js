@@ -40,26 +40,28 @@ const Layout = (props) => {
           zIndex: -1
         }}>
       </div>
-      <img
-        className={`home-header-image`}
-        src={require('../../content/assets/profile-new.jpg')}
-        fluid={profileImage.childImageSharp.fluid}
-        style={{
-          width: `200pt`,
-          height: `200pt`,
-          display: `block`,
-          borderRadius: `100pt`,
-          marginTop: `50pt`,
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          marginBottom: `25pt`,
-          objectFit: `cover`,
-          objectPosition: `center center`,
-          borderColor: `var(--primary-color)`,
-          borderWidth: `0px`,
-          borderStyle: `solid`,
-          zIndex: -1,
-        }}/>
+      <Link to="/about">
+        <img
+          className={`home-header-image`}
+          src={require('../../content/assets/profile-new.jpg')}
+          fluid={profileImage.childImageSharp.fluid}
+          style={{
+            width: `200pt`,
+            height: `200pt`,
+            display: `block`,
+            borderRadius: `100pt`,
+            marginTop: `50pt`,
+            marginLeft: `auto`,
+            marginRight: `auto`,
+            marginBottom: `25pt`,
+            objectFit: `cover`,
+            objectPosition: `center center`,
+            borderColor: `var(--primary-color)`,
+            borderWidth: `0px`,
+            borderStyle: `solid`,
+            zIndex: -1,
+          }}/>
+      </Link>
       <h1
         style={{
           ...scale(1.6),
