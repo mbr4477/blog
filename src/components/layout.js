@@ -9,9 +9,9 @@ import "katex/dist/katex.min.css"
 const Layout = (props) => {
   const data = useStaticQuery(graphql`
     query HeaderQuery {
-      header: file(absolutePath: { regex: "/header.jpg/" }) {
+      profile: file(absolutePath: { regex: "/profile-new.jpg/" }) {
         childImageSharp {
-          fluid(maxHeight: 600) {
+          fluid(maxHeight: 200) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -23,32 +23,49 @@ const Layout = (props) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
 
-  const headerImage = data.header
+  const profileImage = data.profile
   const isRoot = location.pathname === rootPath
 
   if (isRoot) {
     header = (
       <>
-      <Image
-        fluid={headerImage.childImageSharp.fluid}
+      <div
         style={{
+          height: rhythm(10),
+          width: `100vw`,
           position: `absolute`,
           top: 0,
-          left: 0,
-          width: `100%`,
-          height: 350,
+          right: 0,
+          background: `var(--tertiary-color)`,
+          zIndex: -1
+        }}>
+      </div>
+      <img
+        className={`home-header-image`}
+        src={require('../../content/assets/profile-new.jpg')}
+        fluid={profileImage.childImageSharp.fluid}
+        style={{
+          width: `200pt`,
+          height: `200pt`,
+          display: `block`,
+          borderRadius: `100pt`,
+          marginTop: `50pt`,
+          marginLeft: `auto`,
+          marginRight: `auto`,
+          marginBottom: `25pt`,
           objectFit: `cover`,
           objectPosition: `center center`,
+          borderColor: `var(--primary-color)`,
+          borderWidth: `0px`,
+          borderStyle: `solid`,
           zIndex: -1,
-          filter: `brightness(70%)`
         }}/>
       <h1
         style={{
-          ...scale(1.5),
-          marginBottom: rhythm(0.5),
-          marginTop: rhythm(3),
-          color: `white`,
-          textAlign: `center`
+          ...scale(1.6),
+          marginBottom: rhythm(1),
+          color: `var(--primary-color)`,
+          textAlign: `center`,
         }}
       >
         <Link
@@ -59,16 +76,22 @@ const Layout = (props) => {
           }}
           to={`/`}
         >
-          {title.toLowerCase()}
+          {title}
         </Link>
       </h1>
       <h4
         style={{
           marginTop: 10,
-          marginBottom: rhythm(3),
-          fontWeight: `normal`,
+          marginBottom: rhythm(0),
+          marginRight: `auto`,
+          marginLeft: `auto`,
+          fontWeight: `700`,
           textAlign: `center`,
-          color: `white`
+          color: `var(--primary-color)`,
+          background: `var(--secondary-color)`,
+          width: `275px`,
+          padding: `10px`,
+          color: `white`,
         }}
       >
         <>{subtitle}</>
@@ -82,7 +105,8 @@ const Layout = (props) => {
           background: `black`,
           position: `fixed`,
           left: 0,
-          right: 0
+          right: 0,
+          zIndex: 1
         }}>
         <Helmet>
           <script src={withPrefix('dynamic_scroll.js')} type="text/javascript" />
@@ -107,7 +131,7 @@ const Layout = (props) => {
               }}
               to={`/`}
             >
-              {title.toLowerCase()}
+              {title}
             </Link>
           </h3>
         </div>
@@ -129,7 +153,7 @@ const Layout = (props) => {
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(30),
+          maxWidth: rhythm(35),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >

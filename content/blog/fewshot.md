@@ -3,6 +3,7 @@ title: It's Not Magic, Just Close
 description: How AI recognizes things it has only seen a handful of times, once, or not at all
 tags: ['machine-learning']
 featuredImage: network.jpg
+date: "2020-06-27"
 ---
 <span>Photo by <a href="https://unsplash.com/@alinnnaaaa?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Alina Grubnyak</a> on <a href="/s/photos/network-tangled?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 

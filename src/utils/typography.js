@@ -11,18 +11,28 @@ Wordpress2016.overrideThemeStyles = () => {
 
 delete Wordpress2016.googleFonts
 
+const bodyFont = 'Noto Sans' //'Source Sans Pro'
+const headerFont = 'Playfair Display'
+const subtitleFont = 'Roboto Mono'
 // const typography = new Typography(Wordpress2016)
 const typography = new Typography({
   googleFonts: [
     {
-      name: 'Oxygen',
+      name: bodyFont,
       styles: [
         '400',
         '700',
       ]
     },
     {
-      name: 'Merriweather',
+      name: headerFont,
+      styles: [
+        '400',
+        '700'
+      ]
+    },
+    {
+      name: subtitleFont,
       styles: [
         '400',
         '700'
@@ -32,13 +42,16 @@ const typography = new Typography({
   baseFontSize: "16px",
   baseLineHeight: 1.666,
   headerFontFamily: [
-    "Oxygen",
-    "sans-serif",
+    headerFont,
+    "serif",
   ],
-  bodyFontFamily: ["Merriweather", "Times New Roman", "serif"],
+  bodyFontFamily: [bodyFont, "sans"],
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
     'button': {
       fontFamily: 'Oxygen, sans-serif'
+    },
+    '.index-article section': {
+      fontFamily: subtitleFont,
     }
   })
 })
