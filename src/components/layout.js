@@ -31,32 +31,27 @@ const Layout = (props) => {
       <>
       <div
         style={{
-          height: rhythm(10),
+          height: rhythm(7),
           width: `100vw`,
           position: `absolute`,
           top: 0,
           right: 0,
-          background: `var(--tertiary-color)`,
+          background: `var(--background-color)`,
           zIndex: -1
         }}>
       </div>
       <Link to="/about">
         <img
           className={`home-header-image`}
-          src={require('../../content/assets/profile-new.jpg')}
+          src={require('../../content/assets/profile.jpg')}
           fluid={profileImage.childImageSharp.fluid}
           style={{
-            width: `200pt`,
-            height: `200pt`,
             display: `block`,
-            borderRadius: `100pt`,
-            marginTop: `50pt`,
             marginLeft: `auto`,
             marginRight: `auto`,
-            marginBottom: `25pt`,
             objectFit: `cover`,
             objectPosition: `center center`,
-            borderColor: `var(--primary-color)`,
+            borderColor: `var(--secondary-color)`,
             borderWidth: `0px`,
             borderStyle: `solid`,
             zIndex: -1,
@@ -89,8 +84,7 @@ const Layout = (props) => {
           marginLeft: `auto`,
           fontWeight: `700`,
           textAlign: `center`,
-          color: `var(--primary-color)`,
-          background: `var(--secondary-color)`,
+          background: `var(--primary-color)`,
           width: `275px`,
           padding: `10px`,
           color: `white`,
