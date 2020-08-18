@@ -1,0 +1,14 @@
+{
+    "active": true,
+    "weekday": 6,
+    "message": {
+        "active": "I will be at DV8 Kitchen",
+        "inactive": "I will not be at DV8 Kitchen"
+    },
+    "except": [
+        "2020-08-22"
+    ],
+    "defaultTimes": "8 AM to 11 AM",
+    "adjustedTimes": {
+    }
+}
