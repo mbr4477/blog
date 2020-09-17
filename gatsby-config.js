@@ -77,6 +77,7 @@ module.exports = {
             }
           },
           `gatsby-remark-emoji`,
+          `gatsby-remark-copy-linked-files`,
         ],
       },
     },
@@ -98,7 +99,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/rocket-icon.png`,
       },
     },
     `gatsby-plugin-offline`,

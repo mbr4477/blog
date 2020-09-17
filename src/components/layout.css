@@ -1,11 +1,3 @@
-:root {
-    /* CSS */
-    --primary-color: #DB2B39;
-    --secondary-color: #24563A;
-    --tertiary-color: #388659;
-    --background-color: #29335C;
-}
-
 h3 a {
     text-decoration: none;
     color: black;
@@ -13,21 +5,4 @@ h3 a {
 
 a:hover {
     color: #aaa;
-}
-
-.home-header-image {
-    box-shadow: none;
-    transition: all ease-out 0.2s !important;
-    border: solid 15px white !important;
-    width: 150pt;
-    height: 150pt;
-    border-radius: 50%;
-    margin-top: 30pt;
-    margin-bottom: 10pt;
-}
-
-.home-header-image:hover {
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.5) !important;
-    transform: scale(1.01) translateY(-2px);
-    cursor: pointer;
 }

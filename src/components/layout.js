@@ -9,9 +9,9 @@ import "katex/dist/katex.min.css"
 const Layout = (props) => {
   const data = useStaticQuery(graphql`
     query HeaderQuery {
-      profile: file(absolutePath: { regex: "/profile-new.jpg/" }) {
+      header: file(absolutePath: { regex: "/header.jpg/" }) {
         childImageSharp {
-          fluid(maxHeight: 200) {
+          fluid(maxHeight: 600) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -23,46 +23,37 @@ const Layout = (props) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
 
-  const profileImage = data.profile
+  const headerImage = data.header
   const isRoot = location.pathname === rootPath
+
+  const emojiCodes = [
+    0x1f680,
+    0x2615,
+    0x1f4bb,
+    0x26be,
+    0x1f311
+  ]
 
   if (isRoot) {
     header = (
       <>
       <div
         style={{
-          height: rhythm(7),
-          width: `100vw`,
           position: `absolute`,
           top: 0,
-          right: 0,
-          background: `var(--background-color)`,
-          zIndex: -1
-        }}>
-      </div>
-      <Link to="/about">
-        <img
-          className={`home-header-image`}
-          src={require('../../content/assets/profile.jpg')}
-          fluid={profileImage.childImageSharp.fluid}
-          style={{
-            display: `block`,
-            marginLeft: `auto`,
-            marginRight: `auto`,
-            objectFit: `cover`,
-            objectPosition: `center center`,
-            borderColor: `var(--secondary-color)`,
-            borderWidth: `0px`,
-            borderStyle: `solid`,
-            zIndex: -1,
-          }}/>
-      </Link>
+          left: 0,
+          width: `100%`,
+          height: 300,
+          zIndex: -1,
+          background: `#222`
+        }}/>
       <h1
         style={{
-          ...scale(1.6),
-          marginBottom: rhythm(1),
-          color: `var(--primary-color)`,
-          textAlign: `center`,
+          ...scale(1.5),
+          marginBottom: rhythm(0.5),
+          marginTop: rhythm(1),
+          color: `white`,
+          textAlign: `center`
         }}
       >
         <Link
@@ -73,21 +64,19 @@ const Layout = (props) => {
           }}
           to={`/`}
         >
-          {title}
+          {`${emojiCodes.map(it => String.fromCodePoint(it)).join('')}`}
+          <p/>
+          {title.toLowerCase()}
+          <br/>
         </Link>
       </h1>
       <h4
         style={{
           marginTop: 10,
-          marginBottom: rhythm(0),
-          marginRight: `auto`,
-          marginLeft: `auto`,
-          fontWeight: `700`,
+          marginBottom: rhythm(0.5),
+          fontWeight: `normal`,
           textAlign: `center`,
-          background: `var(--primary-color)`,
-          width: `275px`,
-          padding: `10px`,
-          color: `white`,
+          color: `white`
         }}
       >
         <>{subtitle}</>
@@ -101,8 +90,7 @@ const Layout = (props) => {
           background: `black`,
           position: `fixed`,
           left: 0,
-          right: 0,
-          zIndex: 1
+          right: 0
         }}>
         <Helmet>
           <script src={withPrefix('dynamic_scroll.js')} type="text/javascript" />
@@ -127,7 +115,7 @@ const Layout = (props) => {
               }}
               to={`/`}
             >
-              {title}
+              {title.toLowerCase()}
             </Link>
           </h3>
         </div>
@@ -149,7 +137,7 @@ const Layout = (props) => {
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(35),
+          maxWidth: rhythm(30),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >

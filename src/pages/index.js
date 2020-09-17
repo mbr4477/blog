@@ -18,54 +18,46 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle} subtitle={subtitle}>
         <SEO title="All posts" />
-        <div className='article-container'>
-          {posts.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
-            const image = node.frontmatter.featuredImage
-            return (
-            <Link style={{ boxShadow: `none`, textDecoration: `none`, color: `inherit` }} to={node.fields.slug}>
-              <article key={node.fields.slug} className="index-article grow">
-                {/* {
-                  image ? <Image 
-                    fluid={image.childImageSharp.fluid}
-                    style={{ maxHeight: 200 }} /> : undefined
-                } */}
-                <header>
-                  <h3
-                    style={{
-                      marginBottom: rhythm(1 / 4),
-                    }}
-                  >
-                      {title}
-                  </h3>
-                  <small>{node.frontmatter.date}</small>
-                  <small>{node.frontmatter.tags.map(tag => <Tag>{tag}</Tag>)}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description || node.excerpt,
-                    }}
-                  />
-                </section>
-              </article>
-            </Link>
-            )
-          })}
-          
-            <article className="index-article" style={{ 
-              padding: `20px 15px 0x 15px`,
-              boxShadow: `none`,
-              fontSize: `1em`,
-              height: `auto`
-            }}>
+        <article className="index-article" style={{ 
+          padding: `20px 15px 0px 15px`,
+          boxShadow: `none`
+        }}>
+          <Bio />
+        </article>
+        {posts.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug
+          const image = node.frontmatter.featuredImage
+          return (
+          <Link style={{ boxShadow: `none`, textDecoration: `none`, color: `inherit` }} to={node.fields.slug}>
+            <article key={node.fields.slug} className="index-article grow">
+              {
+                image ? <Image 
+                  fluid={image.childImageSharp.fluid}
+                  style={{ maxHeight: 200 }} /> : undefined
+              }
+              <header>
+                <h3
+                  style={{
+                    marginBottom: rhythm(1 / 4),
+                  }}
+                >
+                    {title}
+                </h3>
+                <small>{node.frontmatter.date}</small>
+                <small>{node.frontmatter.tags.map(tag => <Tag>{tag}</Tag>)}</small>
+              </header>
               <section>
-                <Bio />
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: node.frontmatter.description || node.excerpt,
+                  }}
+                />
               </section>
             </article>
-          
-          
-        </div>
+          </Link>
+          )
+        })}
+        <hr style={{ marginTop: rhythm(2) }}/>
       </Layout>
     )
   }

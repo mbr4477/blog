@@ -11,28 +11,18 @@ Wordpress2016.overrideThemeStyles = () => {
 
 delete Wordpress2016.googleFonts
 
-const bodyFont = 'Noto Sans' //'Source Sans Pro'
-const headerFont = 'Playfair Display'
-const subtitleFont = 'Roboto Mono'
 // const typography = new Typography(Wordpress2016)
 const typography = new Typography({
   googleFonts: [
     {
-      name: bodyFont,
+      name: 'Fira Sans',
       styles: [
         '400',
         '700',
       ]
     },
     {
-      name: headerFont,
-      styles: [
-        '400',
-        '700'
-      ]
-    },
-    {
-      name: subtitleFont,
+      name: 'Playfair Display',
       styles: [
         '400',
         '700'
@@ -42,16 +32,13 @@ const typography = new Typography({
   baseFontSize: "16px",
   baseLineHeight: 1.666,
   headerFontFamily: [
-    headerFont,
-    "serif",
+    "Playfair Display",
+    "sans-serif",
   ],
-  bodyFontFamily: [bodyFont, "sans"],
+  bodyFontFamily: ["Fira Sans", "Times New Roman", "serif"],
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
     'button': {
       fontFamily: 'Oxygen, sans-serif'
-    },
-    '.index-article section': {
-      fontFamily: subtitleFont,
     }
   })
 })
