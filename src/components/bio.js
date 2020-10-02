@@ -53,7 +53,7 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives in Lexington, KY, studies machine learning at the University of Kentucky, and interns at NASA.
+        Written by <strong>{author}</strong> who follows Jesus, studies machine learning at the University of Kentucky, and interns at NASA.
         {` `}
         <Link to="/about">Get to know him</Link> or check out his <a href={`https://github.com/${social.github}`}>
           projects on GitHub
