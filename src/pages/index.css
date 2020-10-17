@@ -1,10 +1,11 @@
 .index-article {
-    box-shadow: rgba(0, 0, 0, 0.03) 0px 0px 5px 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 0px 0px;
     margin-top: 20px;
-    border-radius: 10px;
-    transition: ease-in-out 0.5s;
+    border-radius: 5px;
+    transition: ease-in-out 0.2s;
     overflow: hidden;
     background: white;
+    border: solid 1px #eeeeee;
 }
 
 .index-article header {
@@ -16,7 +17,7 @@
 }
 
 .index-article.grow:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 button {
