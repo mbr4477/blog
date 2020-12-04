@@ -8,7 +8,6 @@ import { rhythm } from "../utils/typography"
 
 class About extends React.Component {
   copyEmail() {
-    console.log('clip')
     navigator.clipboard.writeText("matthew.russell@uky.edu").then()
   }
   render() {

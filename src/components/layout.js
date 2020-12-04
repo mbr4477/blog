@@ -1,29 +1,28 @@
 import React from "react"
-import { withPrefix, Link, graphql, useStaticQuery } from "gatsby"
+import { withPrefix, Link } from "gatsby"
 import Helmet from "react-helmet"
 import { rhythm, scale } from "../utils/typography"
-import Image from "gatsby-image"
 import "./layout.css"
 import "katex/dist/katex.min.css"
 
 const Layout = (props) => {
-  const data = useStaticQuery(graphql`
-    query HeaderQuery {
-      header: file(absolutePath: { regex: "/header.jpg/" }) {
-        childImageSharp {
-          fluid(maxHeight: 600) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query HeaderQuery {
+  //     header: file(absolutePath: { regex: "/header.jpg/" }) {
+  //       childImageSharp {
+  //         fluid(maxHeight: 600) {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   const { location, title, subtitle, children } = props
   const rootPath = `${__PATH_PREFIX__}/`
   let header
 
-  const headerImage = data.header
+  // const headerImage = data.header
   const isRoot = location.pathname === rootPath
 
   const emojiCodes = [

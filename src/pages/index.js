@@ -18,10 +18,7 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle} subtitle={subtitle}>
         <SEO title="All posts" />
-        <article className="index-article" style={{ 
-          padding: `20px 15px 0px 15px`,
-          boxShadow: `none`
-        }}>
+        <article className="index-article index-bio">
           <Bio />
         </article>
         {posts.map(({ node }) => {

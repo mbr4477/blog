@@ -5,7 +5,6 @@ const scrollHandler = () => {
   bar.style.paddingBottom = `${padding}px`
   bar.style.paddingTop = `${padding}px`
   bar.querySelector('h3').style.fontSize = `${fontSize}em`
-  console.log(bar.querySelector('h3'))
 
   const progress = document.querySelector('#progress-bar')
   const percent = window.scrollY / (document.body.offsetHeight - window.innerHeight);

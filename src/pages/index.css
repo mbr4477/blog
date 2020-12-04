@@ -20,6 +20,12 @@
     transform: scale(1.02);
 }
 
+.index-bio {
+    padding: 20px 15px 0px 15px;
+    box-shadow: none;
+    border: none;
+}
+
 button {
     border-radius: 5px;
     border-style: none;
