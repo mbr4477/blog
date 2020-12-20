@@ -63,7 +63,7 @@ const Layout = (props) => {
           }}
           to={`/`}
         >
-          {`${emojiCodes.map(it => String.fromCodePoint(it)).join('')}`}
+          {`${emojiCodes.map(it => String.fromCodePoint(it)).join(' ')}`}
           <p/>
           {title.toLowerCase()}
           <br/>
