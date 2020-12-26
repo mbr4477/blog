@@ -8,11 +8,7 @@ The world of embedded hardware and firmware is confusing.
 
 >  If you're already confused, "firmware" just means "software that runs very close to the hardware." And "very close to the hardware" means that you have no operating system to work with. The code you run is the only code there is. Nothing's magic, and that's important to remember, probably in general.
 
-I'd guess the culprit is the variation among manufacturers which becomes accentuated with embedded platforms since you are working so close to the hardware. So everything's a mess, basically. What I want to do is walk step by step up the layers of abstraction so you have a context for how everything is related embedded hardware systems (If you aren't familiar, embedded systems are things like Arduinos or Raspberry Pis). Let's dive into it and head back to where it all starts.
-
-# Sand
-
-Okay, this is probably too far back. But sand makes silicon, and silicon makes computer chips. Let's fast forward in the process just a bit.
+I'd guess the culprit is the variation among manufacturers which becomes accentuated with embedded platforms since you are working so close to the hardware. So everything's a mess, basically. What I want to do is walk step by step up the layers of abstraction so you have a context for how everything is related embedded hardware systems (If you aren't familiar, embedded systems are things like Arduinos or Raspberry Pis). Let's dive into it.
 
 # Microcontrollers
 
