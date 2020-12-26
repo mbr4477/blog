@@ -89,7 +89,8 @@ const Layout = (props) => {
           background: `black`,
           position: `fixed`,
           left: 0,
-          right: 0
+          right: 0,
+          zIndex: 8
         }}>
         <Helmet>
           <script src={withPrefix('dynamic_scroll.js')} type="text/javascript" />
