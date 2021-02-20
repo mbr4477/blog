@@ -20,7 +20,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        {
+        {/* {
           image ? <Image
             fluid={image.childImageSharp.fluid}
             style={{
@@ -34,15 +34,15 @@ class BlogPostTemplate extends React.Component {
               zIndex: -1,
               filter: `brightness(70%)`
             }} /> : <p/>
-        }
+        } */}
         <article>
-          <header style={
-            image ? { marginTop: 340 } : { marginTop: 50 }
-          }>
+          <header>
             <h1
               style={{
                 marginTop: rhythm(1),
-                marginBottom: 0,
+                textAlign: "center",
+                fontWeight: 400,
+                fontSize: "3em"
               }}
             >
               {post.frontmatter.title}
@@ -52,12 +52,21 @@ class BlogPostTemplate extends React.Component {
                 ...scale(-1 / 5),
                 display: `block`,
                 marginBottom: rhythm(1),
+                textAlign: "center"
               }}
             >
-              {post.frontmatter.date} <small>{tags.map((tag) => <Tag>{tag}</Tag>)}</small>
+              <p>{post.frontmatter.date}</p>
+              <p style={{
+                marginLeft: "auto",
+                marginRight: "auto",
+                maxWidth: rhythm(15),
+                textAlign: "justify",
+                fontSize: "1.25em"
+              }}><em>{post.frontmatter.description}</em></p>
+              <p><small>{tags ? tags.map((tag) => <Tag>{tag}</Tag>) : <></>}</small></p>
             </p>
           </header>
-          <section dangerouslySetInnerHTML={{ __html: post.html }} />
+          <section style={{ textAlign: "justify" }} dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr
             style={{
               marginBottom: rhythm(1),
