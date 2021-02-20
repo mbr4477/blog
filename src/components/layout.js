@@ -23,23 +23,15 @@ const Layout = (props) => {
   if (isRoot) {
     header = (
       <>
-      <div
-        style={{
-          position: `absolute`,
-          top: 0,
-          left: 0,
-          width: `100%`,
-          height: 300,
-          zIndex: -1,
-          background: `#222`
-        }}/>
       <h1
         style={{
           ...scale(1.5),
-          marginBottom: rhythm(0.5),
-          marginTop: rhythm(1),
-          color: `white`,
-          textAlign: `center`
+          marginBottom: rhythm(1),
+          marginTop: rhythm(2),
+          color: `black`,
+          textAlign: `center`,
+          fontWeight: `normal`,
+          fontSize: `3em`
         }}
       >
         <Link
@@ -50,7 +42,6 @@ const Layout = (props) => {
           }}
           to={`/`}
         >
-          {`${emojiCodes.map(it => String.fromCodePoint(it)).join(' ')}`}
           <p/>
           {title.toLowerCase()}
           <br/>
@@ -59,10 +50,12 @@ const Layout = (props) => {
       <h4
         style={{
           marginTop: 10,
-          marginBottom: rhythm(0.5),
-          fontWeight: `normal`,
+          marginBottom: rhythm(0),
+          fontFamily: "Newsreader",
+          fontWeight: `200`,
           textAlign: `center`,
-          color: `white`
+          color: `black`,
+          fontSize: `1.2em`
         }}
       >
         <>{subtitle}</>

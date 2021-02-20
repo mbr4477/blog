@@ -17,6 +17,7 @@ const typography = new Typography({
     {
       name: 'Newsreader:ital',
       styles: [
+        '200',
         '400',
         '700',
       ]
@@ -24,6 +25,7 @@ const typography = new Typography({
     {
       name: 'Newsreader',
       styles: [
+        '200',
         '400',
         '700',
       ]

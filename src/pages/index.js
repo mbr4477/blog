@@ -16,7 +16,11 @@ class BlogIndex extends React.Component {
     const subtitle = data.site.siteMetadata.subtitle
     const posts = data.allMarkdownRemark.edges
     return (
-      <Layout location={this.props.location} title={siteTitle} subtitle={subtitle}>
+      <Layout
+        location={this.props.location}
+        title={siteTitle}
+        subtitle={subtitle}
+      >
         <SEO title="All posts" />
         <article className="index-article index-bio">
           <Bio />
@@ -25,23 +29,40 @@ class BlogIndex extends React.Component {
           const title = node.frontmatter.title || node.fields.slug
           const image = node.frontmatter.featuredImage
           return (
-          <Link style={{ boxShadow: `none`, textDecoration: `none`, color: `inherit` }} to={node.fields.slug}>
             <article key={node.fields.slug} className="index-article grow">
-              {
-                image ? <Image 
+              {image ? (
+                <Image
                   fluid={image.childImageSharp.fluid}
-                  style={{ maxHeight: 200 }} /> : undefined
-              }
+                  style={{ maxHeight: 200 }}
+                />
+              ) : (
+                undefined
+              )}
               <header>
                 <h3
                   style={{
                     marginBottom: rhythm(1 / 4),
                   }}
                 >
+                  <Link
+                    style={{
+                      boxShadow: `none`,
+                      textDecoration: `none`,
+                      color: `inherit`,
+                    }}
+                    to={node.fields.slug}
+                  >
                     {title}
+                  </Link>
                 </h3>
                 <small>{node.frontmatter.date}</small>
-                <small>{node.frontmatter.tags ? node.frontmatter.tags.map(tag => <Tag>{tag}</Tag>) : <></>}</small>
+                <small>
+                  {node.frontmatter.tags ? (
+                    node.frontmatter.tags.map(tag => <Tag>{tag}</Tag>)
+                  ) : (
+                    <></>
+                  )}
+                </small>
               </header>
               <section>
                 <p
@@ -51,10 +72,9 @@ class BlogIndex extends React.Component {
                 />
               </section>
             </article>
-          </Link>
           )
         })}
-        <hr style={{ marginTop: rhythm(2) }}/>
+        <hr style={{ marginTop: rhythm(2) }} />
       </Layout>
     )
   }
@@ -71,7 +91,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "\/content/blog\/"} },
+      filter: { fileAbsolutePath: { regex: "/content/blog/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {

@@ -64,6 +64,15 @@ class BlogPostTemplate extends React.Component {
                 fontSize: "1.25em"
               }}><em>{post.frontmatter.description}</em></p>
               <p><small>{tags ? tags.map((tag) => <Tag>{tag}</Tag>) : <></>}</small></p>
+              <p style={{
+                fontSize: "2em",
+                color: "#ddd",
+                letterSpacing: 50,
+                marginRight: -50,
+                textAlign: "center",
+                marginTop: rhythm(1.5),
+                marginBottom: rhythm(1.5),
+              }}>&#10045;&#10045;&#10045;</p>
             </p>
           </header>
           <section style={{ textAlign: "justify" }} dangerouslySetInnerHTML={{ __html: post.html }} />

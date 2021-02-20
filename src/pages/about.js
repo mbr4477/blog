@@ -55,10 +55,7 @@ class About extends React.Component {
           I've built satellite attitude control software, quantum cryptography simulations, NASA test software, mobile apps, desktop apps, and autonomous ground vehicles. 
         </p>
         <p>
-          I code in Python, C/C++, MATLAB, Java, Kotlin, &amp; JavaScript (+ React). I build with Arduino, Raspberry Pi, Anycubic Kossel, Linux, VS Code and Logic Pro X.
-        </p>
-        <p>
-          I should probably use Twitter, but I don't.
+          I code in Python, C/C++, MATLAB, Java, Kotlin, &amp; JavaScript (+ a little React). I build with Arduino, Raspberry Pi, Anycubic Kossel, Linux, VS Code and Logic Pro X.
         </p>
       </Layout>
     )

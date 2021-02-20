@@ -1,5 +1,5 @@
 ---
-title: "Monte-Carlo Simulations"
+title: "Monte Carlo Simulations"
 date: 2021-02-19
 description: An intractable coffee problem. Your model is garbage, but very precisely so. The Tampa Bay Rays don't understand autoregressive processes. My reading goal is a bit lofty.
 ---
