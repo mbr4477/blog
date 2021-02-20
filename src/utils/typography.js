@@ -15,7 +15,14 @@ delete Wordpress2016.googleFonts
 const typography = new Typography({
   googleFonts: [
     {
-      name: 'Fira Sans',
+      name: 'Newsreader:ital',
+      styles: [
+        '400',
+        '700',
+      ]
+    },
+    {
+      name: 'Newsreader',
       styles: [
         '400',
         '700',
@@ -35,7 +42,7 @@ const typography = new Typography({
     "Playfair Display",
     "sans-serif",
   ],
-  bodyFontFamily: ["Fira Sans", "Times New Roman", "serif"],
+  bodyFontFamily: ["Newsreader", "Times New Roman", "serif"],
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
     'button': {
       fontFamily: 'Oxygen, sans-serif'

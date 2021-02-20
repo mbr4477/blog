@@ -41,7 +41,7 @@ class BlogIndex extends React.Component {
                     {title}
                 </h3>
                 <small>{node.frontmatter.date}</small>
-                <small>{node.frontmatter.tags.map(tag => <Tag>{tag}</Tag>)}</small>
+                <small>{node.frontmatter.tags ? node.frontmatter.tags.map(tag => <Tag>{tag}</Tag>) : <></>}</small>
               </header>
               <section>
                 <p

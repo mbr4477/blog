@@ -2,22 +2,9 @@ import React from "react"
 import { withPrefix, Link } from "gatsby"
 import Helmet from "react-helmet"
 import { rhythm, scale } from "../utils/typography"
-import "./layout.css"
 import "katex/dist/katex.min.css"
 
 const Layout = (props) => {
-  // const data = useStaticQuery(graphql`
-  //   query HeaderQuery {
-  //     header: file(absolutePath: { regex: "/header.jpg/" }) {
-  //       childImageSharp {
-  //         fluid(maxHeight: 600) {
-  //           ...GatsbyImageSharpFluid
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-
   const { location, title, subtitle, children } = props
   const rootPath = `${__PATH_PREFIX__}/`
   let header
@@ -84,17 +71,7 @@ const Layout = (props) => {
     )
   } else {
     header = (
-      <div
-        style={{
-          background: `black`,
-          position: `fixed`,
-          left: 0,
-          right: 0,
-          zIndex: 8
-        }}>
-        <Helmet>
-          <script src={withPrefix('dynamic_scroll.js')} type="text/javascript" />
-        </Helmet>
+      <div>
         <div
           id={`header-bar`}
           style={{
@@ -104,7 +81,7 @@ const Layout = (props) => {
             style={{
               fontWeight: 400,
               margin: 0,
-              color: `white`,
+              color: `black`,
               fontSize: `1.5em`
             }}>
             <Link
@@ -119,14 +96,6 @@ const Layout = (props) => {
             </Link>
           </h3>
         </div>
-        <div
-          id={`progress-bar`}
-          style={{
-            width: `0vw`,
-            height: `4px`,
-            background: `#00AEFF`
-          }}>
-        </div>
       </div>
     )
   }
@@ -137,7 +106,7 @@ const Layout = (props) => {
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(30),
+          maxWidth: rhythm(25),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >

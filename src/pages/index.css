@@ -1,47 +1,51 @@
 .index-article {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 0px 0px;
-    margin-top: 20px;
-    border-radius: 5px;
-    transition: ease-in-out 0.2s;
-    overflow: hidden;
-    background: white;
-    border: solid 1px #eeeeee;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 0px 0px;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: ease-in-out 0.2s;
+  overflow: hidden;
+  background: white;
+  border: solid 1px #eeeeee;
 }
 
 .index-article header {
-    padding: 20px;
+  padding: 20px;
 }
 
 .index-article section {
-    padding: 0px 20px 5px 20px;
+  padding: 0px 20px 5px 20px;
 }
 
 .index-article.grow:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .index-bio {
-    padding: 20px 15px 0px 15px;
-    box-shadow: none;
-    border: none;
+  padding: 20px 15px 0px 15px;
+  box-shadow: none;
+  border: none;
 }
 
 button {
-    border-radius: 5px;
-    border-style: none;
-    padding: 5px 10px;
-    cursor: pointer;
+  border-radius: 5px;
+  border-style: none;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 button:hover {
-    background: darkslategray;
-    color: white;
+  background: darkslategray;
+  color: white;
 }
 
 blockquote {
-    background: #fec;
-    color: #876;
-    padding: 10px 10px 10px 10px;
-    border-left: solid 4px;
-    margin-left: 0;
+  color: #777;
+  font-style: italic;
+  padding: 10px 10px 10px 15px;
+  border-left: solid 2px;
+  margin-left: 25px;
+}
+
+code {
+  font-size: smaller !important;
 }
