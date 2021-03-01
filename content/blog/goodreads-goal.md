@@ -141,12 +141,12 @@ def evaluate(sample, target):
     """Run a simulation and return a quality score."""
     num_read = books_read_in_year(**sample)["num_read"]
     sigma = 1
-    return np.exp(-((num_read - target) ** 2) / (2 * sigma))
+    return np.exp(-((num_read - target) ** 2) / (2 * sigma**2))
 ```
 
 I am using a pseudo-Gaussian function centered at my goal to compute the "goodness" of a simulation:
 $$
-q = \exp\left(-\frac{(n-n_{\text{goal}})^2}{2\sigma}\right)
+q = \exp\left(-\frac{(n-n_{\text{goal}})^2}{2\sigma^2}\right)
 $$
 We will use the Metropolis-Hastings flavor of MCMC because it is easy to implement. Other variations of MCMC are faster or produce better samples, but they can get complex very quickly. Just so you recognize the names, popular variants are NUTS (No U-Turn Sampler) and HMC (Hamiltonian Monte Carlo).
 
