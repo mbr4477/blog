@@ -79,6 +79,11 @@ code {
   font-size: smaller !important;
 }
 
+div.gatsby-highlight code {
+  display: block;
+  line-height: 1.5em;
+}
+
 hr::after {
   font-family: "Times New Roman";
   display: inline-block;
