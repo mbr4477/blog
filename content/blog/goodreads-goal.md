@@ -1,6 +1,7 @@
 ---
 title: So How Exactly Can I Meet My Goodreads Goal?
 description: A review of my book reading conundrum. We meet Mr. Metropolis and Mr. Hastings. Maybe my reading speed is fine after all.
+date: 2021-03-01
 ---
 
 
