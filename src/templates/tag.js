@@ -7,7 +7,6 @@ import Tag from "../components/tag"
 import Image from "gatsby-image"
 import { rhythm } from "../utils/typography"
 import "../pages/index.css"
-import "./tag.css"
 
 const TagsTemplate = ( {location, pageContext, data }) => {
   const { tag } = pageContext
@@ -17,7 +16,11 @@ const TagsTemplate = ( {location, pageContext, data }) => {
   return (
     <Layout location={location} title={siteTitle} subtitle={subtitle}>
       <SEO title="" />
-      <h1 class="tag-title">{tag} ({totalCount} posts)</h1>
+      <h1 style={{
+        padding: "50px 15px 0px 15px"
+      }}>
+        {tag} ({totalCount} posts)
+      </h1>
       {edges.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         const image = node.frontmatter.featuredImage

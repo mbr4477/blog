@@ -45,10 +45,6 @@ h3 > a:hover::before {
   font-style: italic;
 }
 
-/* .index-article.grow:hover {
-  transform: scale(1.02);
-} */
-
 .index-bio {
   padding: 20px 15px 0px 15px;
   box-shadow: none;
