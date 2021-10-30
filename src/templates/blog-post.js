@@ -20,7 +20,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        {/* {
+        {
           image ? <Image
             fluid={image.childImageSharp.fluid}
             style={{
@@ -34,7 +34,7 @@ class BlogPostTemplate extends React.Component {
               zIndex: -1,
               filter: `brightness(70%)`
             }} /> : <p/>
-        } */}
+        }
         <article>
           <header>
             <h1
@@ -63,7 +63,7 @@ class BlogPostTemplate extends React.Component {
                 textAlign: "justify",
                 fontSize: "1.25em"
               }}><em>{post.frontmatter.description}</em></p>
-              <p><small>{tags ? tags.map((tag) => <Tag>{tag}</Tag>) : <></>}</small></p>
+              <p><small>{tags ? tags.map((tag) => <Tag key={tag}>{tag}</Tag>) : <></>}</small></p>
               <p style={{
                 fontSize: "2em",
                 color: "#ddd",

@@ -1,6 +1,5 @@
 import React from "react"
-import { withPrefix, Link } from "gatsby"
-import Helmet from "react-helmet"
+import { Link } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
 import "katex/dist/katex.min.css"
 
@@ -11,14 +10,6 @@ const Layout = (props) => {
 
   // const headerImage = data.header
   const isRoot = location.pathname === rootPath
-
-  const emojiCodes = [
-    0x1f680,
-    0x2615,
-    0x1f4bb,
-    0x26be,
-    0x1f311
-  ]
 
   if (isRoot) {
     header = (
