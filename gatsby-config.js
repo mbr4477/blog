@@ -80,6 +80,12 @@ module.exports = {
           },
           `gatsby-remark-emoji`,
           `gatsby-remark-copy-linked-files`,
+          {
+            resolve: `gatsby-plugin-typography`,
+            options: {
+              pathToConfigModule: `src/utils/typography`,
+            },
+          },
         ],
       },
     },
