@@ -1,3 +1,36 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Newsreader";
+  src: url(../fonts/Newsreader-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Newsreader";
+  src: url(../fonts/Newsreader-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Newsreader";
+  src: url(../fonts/Newsreader-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Newsreader";
+  src: url(../fonts/Newsreader-BoldItalic.ttf);
+  font-weight: bold;
+  font-style: italic;
+}
+
 .index-article {
   /* box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 0px 0px; */
   margin-top: 20px;
@@ -96,4 +129,9 @@ hr {
   max-width: 300px;
   height: 0.8px;
   background: #ccc;
+}
+
+.gatsby-resp-image-figcaption {
+  text-align: center;
+  font-style: italic;
 }
