@@ -76,12 +76,12 @@ class BlogPostTemplate extends React.Component {
             </p>
           </header>
           <section style={{ textAlign: "justify" }} dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr
-            style={{
-              marginBottom: rhythm(1),
-            }}
-          />
           <footer>
+            <hr
+              style={{
+                marginBottom: rhythm(1),
+              }}
+            />
             <Bio />
           </footer>
         </article>

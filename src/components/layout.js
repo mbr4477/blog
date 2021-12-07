@@ -14,43 +14,43 @@ const Layout = (props) => {
   if (isRoot) {
     header = (
       <>
-      <h1
-        style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1),
-          marginTop: rhythm(2),
-          color: `black`,
-          textAlign: `center`,
-          fontWeight: `normal`,
-          fontSize: `3em`
-        }}
-      >
-        <Link
+        <h1
           style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`
+            ...scale(1.5),
+            marginBottom: rhythm(1),
+            marginTop: rhythm(2),
+            color: `black`,
+            textAlign: `center`,
+            fontWeight: `normal`,
+            fontSize: `3em`
           }}
-          to={`/`}
         >
-          <p/>
-          {title.toLowerCase()}
-          <br/>
-        </Link>
-      </h1>
-      <h4
-        style={{
-          marginTop: 10,
-          marginBottom: rhythm(0),
-          fontFamily: "Newsreader",
-          fontWeight: `200`,
-          textAlign: `center`,
-          color: `black`,
-          fontSize: `1.2em`
-        }}
-      >
-        <>{subtitle}</>
-      </h4>
+          <Link
+            style={{
+              boxShadow: `none`,
+              textDecoration: `none`,
+              color: `inherit`
+            }}
+            to={`/`}
+          >
+            <p />
+            {title.toLowerCase()}
+            <br />
+          </Link>
+        </h1>
+        <h4
+          style={{
+            marginTop: 10,
+            marginBottom: rhythm(0),
+            fontFamily: "Newsreader",
+            fontWeight: `200`,
+            textAlign: `center`,
+            color: `black`,
+            fontSize: `1.2em`
+          }}
+        >
+          <>{subtitle}</>
+        </h4>
       </>
     )
   } else {
