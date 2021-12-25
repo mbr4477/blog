@@ -20,21 +20,6 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        {
-          image ? <Image
-            fluid={image.childImageSharp.fluid}
-            style={{
-              position: `absolute`,
-              top: 0,
-              left: 0,
-              width: `100%`,
-              height: 350,
-              objectFit: `cover`,
-              objectPosition: `center center`,
-              zIndex: -1,
-              filter: `brightness(70%)`
-            }} /> : <p/>
-        }
         <article>
           <header>
             <h1
