@@ -3,6 +3,7 @@ title: Let's Calculate a Lagrange Point For Fun
 date: 2021-12-24
 description: If James Webb makes it to L2, it just might be a Christmas miracle. Also, a little code saves us from an intractable polynomial equation.
 tags: ["math", "space"]
+featuredImage: l2.jpg
 ---
 
 The James Webb Space Telescope needs to be consistently shielded from the light and heat of the Sun and that reflected by the Earth. Ultimately, we need two things:
