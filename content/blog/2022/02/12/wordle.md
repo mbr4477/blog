@@ -26,12 +26,12 @@ The best starting word could be:
 - The word that sets you up to minimize the worst-case number of guesses, or
 - The word that sets you up to solve the puzzle as fast as possible (but risks not solving it at all)
 
-This is not an exhaustive list, either. The point is that is doesn't make sense to claim that a word is the "best" without carefully defining the problem you are solving. With a clear definition, you will be able to tell whether a particular solution is truly the best you can do. 
+This is not an exhaustive list, either. The point is that it doesn't make sense to claim that a word is the "best" without carefully defining the problem you are solving. With a clear definition, you will be able to tell whether a particular solution is truly the best you can do. 
 To make matters even worse,
 even if you can define the problem,
-that doesn't mean that you can practically find the solution.
+that doesn't mean you can practically find the solution.
 If that's the case,
-you have to make some simplying assumptions
+you have to make simplying assumptions
 so the problem becomes "tractable."
 
 Of course, the usefulness of your solution depends on how realistic
@@ -50,7 +50,7 @@ Personally, I like starting with `arose` or `soare` and the following it up with
 
 Obviously, the lesson here isn't limited to Wordle.
 We encounter claims of "best" all the time, 
-whether in advertising or decision-making.
+whether in advertising or decision making.
 Properly evaluating these claims requires that we
 ask the question, "Best *for what*?" or "Best *in what sense*?"
 Discerning the answer is critical for understanding
