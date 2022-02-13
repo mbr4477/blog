@@ -1,5 +1,5 @@
 ---
-title: The Best Discussion of the Best First Guess in Wordle
+title: The Best Analysis of the Best First Guess in Wordle
 description: I take on the entire Internet. Some words are meaningless. You learn a lesson that will serve you well far beyond Wordle. I get to use the word "heuristic" in a sentence.
 date: 2022-02-11
 tags: ["math"]

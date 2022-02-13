@@ -1,0 +1,21 @@
+{
+    "grammarly.overrides": [
+        {
+            "files": [
+                "**/2022/01/29/wordle.md"
+            ],
+            "config": {
+                "audience": "general",
+                "dialect": "american",
+                "domain": "casual",
+                "emotions": [
+                    "friendly"
+                ],
+                "goals": [
+                    "inform",
+                    "describe"
+                ]
+            }
+        }
+    ]
+}
