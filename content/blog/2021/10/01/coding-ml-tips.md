@@ -39,7 +39,7 @@ See previous discussion under my notebook rant. If you could conceivably want to
 See previous discussion under said notebook rant. When used with GitHub, you get code backup and change tracking. Use branches. Ruin your model by trying to change up the architecture?  `git checkout before-i-messed-it-up`.
 
 # Use PyTorch Lightning
-PyTorch is nice for customizing models and training loops. The simplicity you can get from Keras (and therefore TensorFlow) might seem cool, but why not have PyTorch *and* that convenience? PyTorch Lightning is awesome and makes logging, training, testing, checkpoint loading, GPU usage, and really just about everything so much easier. [Look it up.](https://www.pytorchlightning.ai/)
+PyTorch is nice for customizing models and training loops. The simplicity you can get from Keras (and therefore TensorFlow) might seem cool, but why not have PyTorch *and* that convenience? PyTorch Lightning is awesome and makes logging, training, testing, checkpoint loading, GPU usage, and really just about everything so much easier. [Check it out!](https://www.pytorchlightning.ai/)
 
 # Find a Code Formatter and Tell Your IDE to Run It on Save
 I use `black`, and VS Code formats my file every time I hit save. This does wonders for keeping your code organized, readable, and consistent. It makes me like looking at my code.
@@ -73,3 +73,6 @@ With a handy IDE, your documentation will popup whenever you call your function 
 
 # Use Typing
 Use the `typing` library and Python's support for type annotations. Besides making code easier to read, this will let the IDE flag any possible problems. Let it help you.
+
+# Conclusion
+To be fair, I've been rather direct in my criticism for effect. However, even if you don't agree on every point, make sure you continue to explore ways to improve your code organization and management along with workflow efficiency!

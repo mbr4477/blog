@@ -42,20 +42,25 @@ class About extends React.Component {
             I'm interested in everything.
           </h2>
         </div>
-        <div style={{textAlign: 'center', marginBottom: 20}}>
-          <button onClick={(e) => { this.copyEmail() } }>Copy Email to Clipboard</button>
+        <div style={{ textAlign: 'center', marginBottom: 20 }}>
+          <button onClick={(e) => { this.copyEmail() }}>Copy Email to Clipboard</button>
         </div>
         <p>
-          I'm a machine learning PhD student at the University of Kentucky and an intern at NASA Johnson Space Center.
+          I'm an Electrical Engineering/Machine Learning PhD Candidate at the University of Kentucky
+          and recent six-tour software intern at NASA Johnson Space Center.
         </p>
         <p>
-          I like embedded systems, spaceflight, cosmology, apologetics, music production, The Ohio State Buckeyes, the New York Yankees, machine learning, robots, software development, startups, entrepreneurship, traveling, puns, and coffee.
+          I like embedded systems, spaceflight, cosmology, apologetics, music production, The Ohio State Buckeyes, Major League Baseball, machine learning, robots, software development, startups, entrepreneurship, traveling, puns, and coffee.
         </p>
         <p>
-          I've built satellite attitude control software, quantum cryptography simulations, NASA test software, mobile apps, desktop apps, and autonomous ground vehicles. 
+          I've built satellite attitude control software, mobile apps, desktop apps, autonomous robots,
+          quantum cryptography simulations for the USAF/AFIT, various projects at NASA, and many personal projects.
+          My deep learning work includes image segmentation, fault monitoring from high-frequency sensing, transfer learning, continual learning, and more with CNNs, RNNs, etc.
         </p>
         <p>
-          I code in Python, C/C++, MATLAB, Java, Kotlin, &amp; JavaScript (+ a little React). I build with Arduino, Raspberry Pi, Anycubic Kossel, Linux, VS Code and Logic Pro X.
+          I code in Python (PyTorch, PyTorch Lightning, NumPy, Pandas, SciPy, Matplotlib, etc.), some C/C++, MATLAB, Java, Kotlin, &amp; JavaScript (+ a little React).
+          Clean Architecture is cool.
+          I build with Arduino, Raspberry Pi, Anycubic Kossel, Linux, VS Code, and Logic Pro X.
         </p>
       </Layout>
     )
