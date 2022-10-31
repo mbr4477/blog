@@ -8,7 +8,7 @@ import { rhythm } from "../utils/typography"
 
 class About extends React.Component {
   copyEmail() {
-    navigator.clipboard.writeText("matthew.russell@uky.edu").then()
+    navigator.clipboard.writeText("matthew@mruss.dev").then()
   }
   render() {
     const { data } = this.props
