@@ -153,6 +153,13 @@ hr.copyright {
   border: none;
   border-top: solid 1px #ccc;
   height: 2px;
+  margin-bottom: 1em;
+}
+
+div.copyright {
+  margin-top: 3em;
+  text-align: center;
+  color: #888;
 }
 
 .gatsby-resp-image-figcaption {

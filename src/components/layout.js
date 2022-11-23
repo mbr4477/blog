@@ -93,7 +93,7 @@ const Layout = (props) => {
         }}
       >
         <main>{children}</main>
-        <div style={{ marginTop: 20 }}>
+        <div class="copyright">
           <hr class="copyright" />
           © {new Date().getFullYear()}, Built with
           {` `}
