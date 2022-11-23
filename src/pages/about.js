@@ -25,7 +25,8 @@ class About extends React.Component {
             image={data.avatar.childImageSharp.gatsbyImageData}
             alt={author}
             style={{
-              marginRight: 25,
+              marginRight: "auto",
+              marginLeft: "auto",
               marginBottom: 0,
               minWidth: 200,
               borderRadius: `100%`,
