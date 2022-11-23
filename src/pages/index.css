@@ -149,7 +149,7 @@ footer > hr {
   overflow: visible;
 }
 
-hr.copyright {
+hr {
   border: none;
   border-top: solid 1px #ccc;
   height: 2px;
