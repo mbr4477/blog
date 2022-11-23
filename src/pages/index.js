@@ -5,8 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Tag from "../components/tag"
-import Image from "gatsby-image"
-import { rhythm } from "../utils/typography"
+import { GatsbyImage } from "gatsby-plugin-image"
 import "./index.css"
 
 class BlogIndex extends React.Component {
@@ -31,19 +30,15 @@ class BlogIndex extends React.Component {
           return (
             <article key={node.fields.slug} className="index-article grow">
               {image ? (
-                <Image
-                  fluid={image.childImageSharp.fluid}
+                <GatsbyImage
+                  image={image.childImageSharp.gatsbyImageData}
                   style={{ maxHeight: 200 }}
                 />
               ) : (
                 undefined
               )}
               <header>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
+                <h3>
                   <Link
                     style={{
                       boxShadow: `none`,
@@ -55,7 +50,7 @@ class BlogIndex extends React.Component {
                     {title}
                   </Link>
                 </h3>
-                <small>{node.frontmatter.date}</small>
+                <small class="date">{node.frontmatter.date}</small>
                 <small>
                   {node.frontmatter.tags ? (
                     node.frontmatter.tags.map(tag => <Tag key={tag}>{tag}</Tag>)
@@ -74,7 +69,6 @@ class BlogIndex extends React.Component {
             </article>
           )
         })}
-        <hr style={{ marginTop: rhythm(2) }} />
       </Layout>
     )
   }
@@ -107,9 +101,7 @@ export const pageQuery = graphql`
             tags
             featuredImage {
               childImageSharp {
-                fluid(maxHeight: 400) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: CONSTRAINED, height: 200)
               }
             }
           }

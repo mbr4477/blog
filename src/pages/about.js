@@ -1,10 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Image from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 
 class About extends React.Component {
   copyEmail() {
@@ -22,11 +21,11 @@ class About extends React.Component {
         <div style={{
           textAlign: `center`
         }}>
-          <Image
-            fixed={data.avatar.childImageSharp.fixed}
+          <GatsbyImage
+            image={data.avatar.childImageSharp.gatsbyImageData}
             alt={author}
             style={{
-              marginRight: rhythm(1 / 2),
+              marginRight: 25,
               marginBottom: 0,
               minWidth: 200,
               borderRadius: `100%`,
@@ -73,9 +72,7 @@ export const pageQuery = graphql`
   query {
     avatar: file(absolutePath: { regex: "/profile-kid.jpg/" }) {
       childImageSharp {
-        fixed(width: 200, height: 200) {
-        ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FIXED, width: 200, height: 200)
       }
     }
     site {

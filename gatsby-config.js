@@ -43,12 +43,6 @@ module.exports = {
               markdownCaptions: true
             },
           },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
           'gatsby-remark-graphviz',
           {
             resolve: `gatsby-remark-prismjs`,
@@ -80,12 +74,6 @@ module.exports = {
           },
           `gatsby-remark-emoji`,
           `gatsby-remark-copy-linked-files`,
-          {
-            resolve: `gatsby-plugin-typography`,
-            options: {
-              pathToConfigModule: `src/utils/typography`,
-            },
-          },
         ],
       },
     },

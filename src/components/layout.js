@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { rhythm, scale } from "../utils/typography"
 import "katex/dist/katex.min.css"
 
 const Layout = (props) => {
@@ -16,9 +15,8 @@ const Layout = (props) => {
       <>
         <h1
           style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1),
-            marginTop: rhythm(2),
+            marginBottom: `1em`,
+            marginTop: `2em`,
             color: `black`,
             textAlign: `center`,
             fontWeight: `normal`,
@@ -41,7 +39,7 @@ const Layout = (props) => {
         <h4
           style={{
             marginTop: 10,
-            marginBottom: rhythm(0),
+            marginBottom: `0em`,
             fontFamily: "Newsreader",
             fontWeight: `200`,
             textAlign: `center`,
@@ -90,16 +88,17 @@ const Layout = (props) => {
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(25),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          maxWidth: 600,
+          padding: `2em 2em`,
         }}
       >
         <main>{children}</main>
-        <footer style={{ marginTop: 20 }}>
+        <div style={{ marginTop: 20 }}>
+          <hr class="copyright" />
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        </div>
       </div>
     </>
   )

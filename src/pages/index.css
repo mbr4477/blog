@@ -1,6 +1,13 @@
 @font-face {
   font-family: "Playfair Display";
   src: url(../fonts/PlayfairDisplay-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url(../fonts/PlayfairDisplay-Bold.ttf);
+  font-weight: bold;
 }
 
 @font-face {
@@ -31,25 +38,34 @@
   font-style: italic;
 }
 
+body {
+  font-family: "Newsreader", Times, serif;
+  line-height: 1.5em;
+}
+
 .index-article {
-  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 0px 0px; */
   margin-top: 20px;
   border-radius: 5px;
   transition: ease-in-out 0.2s;
   overflow: hidden;
   background: white;
-  /* border: solid 1px #eeeeee; */
 }
 
-.index-article header {
-  padding: 20px 0;
+.index-article p {
+  margin-top: 0;
+  text-align: justify;
 }
 
-h3 > a {
+h1, h2, h3, h4 {
+  font-family: "Playfair Display", Times, serif;
+  font-weight: bold;
+}
+
+.index-article header h3 > a {
   position: relative;
 }
 
-h3 > a::before {
+.index-article header h3 > a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -63,7 +79,7 @@ h3 > a::before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-h3 > a:hover::before {
+.index-article header h3 > a:hover::before {
   visibility: visible;
   transform: scaleX(1);
 }
@@ -71,10 +87,10 @@ h3 > a:hover::before {
 .index-article header h3 {
   font-weight: normal;
   font-size: 1.5em;
+  margin-bottom: 0.25em;
 }
 
-.index-article section {
-  /* padding: 0px 20px 5px 20px; */
+.index-article header .date {
   font-style: italic;
 }
 
@@ -117,7 +133,7 @@ footer > hr::after {
   font-family: "Times New Roman";
   display: inline-block;
   content: "\00A7";
-  transform: translateX(-50%) translate(150px, -41px) rotate(90deg);
+  transform: translateX(-50%) translate(150px, -50%) rotate(90deg);
   color: #ccc;
   font-size: 50px;
 }
@@ -127,8 +143,16 @@ footer > hr {
   margin-right: auto;
   margin-top: 3em;
   max-width: 300px;
-  height: 0.8px;
-  background: #ccc;
+  border: none;
+  border-top: solid 1.8px #ccc;
+  height: 2px;
+  overflow: visible;
+}
+
+hr.copyright {
+  border: none;
+  border-top: solid 1px #ccc;
+  height: 2px;
 }
 
 .gatsby-resp-image-figcaption {

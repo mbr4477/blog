@@ -1,10 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Image from "gatsby-image"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
 import Tag from "../components/tag"
 
 class BlogPostTemplate extends React.Component {
@@ -24,19 +22,19 @@ class BlogPostTemplate extends React.Component {
           <header>
             <h1
               style={{
-                marginTop: rhythm(1),
+                marginTop: `1em`,
                 textAlign: "center",
-                fontWeight: 400,
-                fontSize: "3em"
+                fontWeight: 100,
+                fontSize: "3em",
+                lineHeight: `1.25em`
               }}
             >
               {post.frontmatter.title}
             </h1>
             <p
               style={{
-                ...scale(-1 / 5),
                 display: `block`,
-                marginBottom: rhythm(1),
+                marginBottom: `1em`,
                 textAlign: "center"
               }}
             >
@@ -44,9 +42,9 @@ class BlogPostTemplate extends React.Component {
               <p style={{
                 marginLeft: "auto",
                 marginRight: "auto",
-                maxWidth: rhythm(15),
                 textAlign: "justify",
-                fontSize: "1.25em"
+                fontSize: "1em",
+                width: `60%`
               }}><em>{post.frontmatter.description}</em></p>
               <p><small>{tags ? tags.map((tag) => <Tag key={tag}>{tag}</Tag>) : <></>}</small></p>
               <p style={{
@@ -55,8 +53,8 @@ class BlogPostTemplate extends React.Component {
                 letterSpacing: 50,
                 marginRight: -50,
                 textAlign: "center",
-                marginTop: rhythm(1.5),
-                marginBottom: rhythm(1.5),
+                marginTop: `1em`,
+                marginBottom: `1em`,
               }}>&#10045;&#10045;&#10045;</p>
             </p>
           </header>
@@ -64,7 +62,7 @@ class BlogPostTemplate extends React.Component {
           <footer>
             <hr
               style={{
-                marginBottom: rhythm(1),
+                marginBottom: `1em`,
               }}
             />
             <Bio />
