@@ -11,7 +11,6 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
     const tags = this.props.data.markdownRemark.frontmatter.tags
-    const image = this.props.data.markdownRemark.frontmatter.featuredImage
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -120,9 +119,7 @@ export const pageQuery = graphql`
         tags
         featuredImage {
           childImageSharp {
-            fluid(maxHeight: 400) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: CONSTRAINED, height: 400)
           }
         }
       }
