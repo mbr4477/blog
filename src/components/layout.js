@@ -49,6 +49,11 @@ const Layout = (props) => {
         >
           <>{subtitle}</>
         </h4>
+        <nav>
+          <ul>
+            <li><Link to={"/microblog"}>@mrussdev</Link></li>
+          </ul>
+        </nav>
       </>
     )
   } else {
@@ -94,7 +99,6 @@ const Layout = (props) => {
       >
         <main>{children}</main>
         <div class="copyright">
-          <hr class="copyright" />
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
