@@ -167,16 +167,16 @@ div.copyright {
   font-style: italic;
 }
 
-nav {
+header nav {
   margin-top: 40px;
 }
 
-nav ul {
+header nav ul {
   padding: 0;
   text-align: center;
 }
 
-nav ul li {
+header nav ul li {
   list-style: none;
   display: inline-block;
   text-transform: uppercase;
@@ -184,7 +184,7 @@ nav ul li {
   font-weight: bold;
 }
 
-nav ul li a {
+header nav ul li a {
   text-decoration: none;
   color: slateblue;
   margin: 0;
@@ -194,7 +194,7 @@ nav ul li a {
   box-sizing: content-box;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
   color: white;
   background-color: slateblue;
 }
