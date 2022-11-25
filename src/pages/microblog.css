@@ -16,6 +16,7 @@
 }
 
 .micropost .date {
+    display: inline-block;
     font-size: 0.75em;
     text-align: right;
     color: #888;
@@ -25,4 +26,23 @@ h1.microblog-title {
     text-align: center;
     margin-bottom: 30px;
     font-family: sans-serif;
+}
+
+.microblog-font {
+    font-family: sans-serif;
+}
+
+.micropost-share-link {
+    color: #aaa;
+    margin-right: 10px;
+}
+
+.micropost .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.micropost .footer .spacer {
+    flex-grow: 1;
 }
