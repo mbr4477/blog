@@ -1,10 +1,11 @@
 import { graphql } from "gatsby"
-import "./microblog.css"
 import moment from "moment"
 import React, { useEffect, useState } from "react"
 import ReactMarkdown from "react-markdown"
 import { GithubMicroblog } from "../api/microblog"
 import Layout from "../components/layout"
+import "./microblog.css"
+import "./spinner.css"
 
 export const pageQuery = graphql`
   query {
@@ -16,6 +17,20 @@ export const pageQuery = graphql`
     }
   }
 `
+
+function Spinner(props) {
+    return <div style={{
+        width: `20px`,
+        height: `20px`,
+        borderRadius: `40px`,
+        border: `4px solid slateblue`,
+        borderColor: `slateblue slateblue slateblue transparent`,
+        animation: `spinner 1.2s linear infinite`,
+        marginRight: `auto`,
+        marginLeft: `auto`
+    }}>
+    </div>
+}
 
 function Micropost(props) {
     const date = moment(props.isoDate)
@@ -29,7 +44,7 @@ function Micropost(props) {
 
 function Microblog(props) {
     const microblog = new GithubMicroblog("mbr4477", "microblog")
-    const [posts, setPosts] = useState([])
+    const [posts, setPosts] = useState(null)
 
     useEffect(() => {
         microblog
@@ -61,11 +76,15 @@ function Microblog(props) {
         title={siteTitle}
         subtitle={subtitle}>
         <h1 className="microblog-title">@mrussdev</h1>
-        {posts.map(p => <Micropost
-            key={p.date}
-            isoDate={p.date}>
-            {p.content}
-        </Micropost>)}
+        {
+            posts ?
+                posts.map(p => <Micropost
+                    key={p.date}
+                    isoDate={p.date}>
+                    {p.content}
+                </Micropost>)
+                : <Spinner />
+        }
     </Layout>
 }
 
