@@ -51,7 +51,8 @@ const Layout = (props) => {
         </h4>
         <nav>
           <ul>
-            <li><Link to={"/microblog"}>@mrussdev</Link></li>
+            <li><Link to={"/microblog"}>microblog</Link></li>
+            <li><Link to={"/papers"}>Publications</Link></li>
           </ul>
         </nav>
       </>

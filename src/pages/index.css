@@ -181,7 +181,6 @@ header nav ul li {
   display: inline-block;
   text-transform: uppercase;
   font-family: sans-serif;
-  font-weight: bold;
 }
 
 header nav ul li a {
@@ -189,13 +188,9 @@ header nav ul li a {
   color: slateblue;
   margin: 0;
   padding: 12px 20px 10px 20px;
-  border: solid 1px slateblue;
-  border-radius: 5px;
-  box-sizing: content-box;
 }
 
 header nav ul li a:hover {
-  color: white;
-  background-color: slateblue;
+  color: black;
 }
 
