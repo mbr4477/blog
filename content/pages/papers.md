@@ -10,7 +10,7 @@ title: Publications
 
 <h1 style="text-align: center;">2022</h1>
 
-**Russell, M.**, & Wang, P. (2022). Improved reprsentations for continual learning of novel motor health conditions through few-shot prototypical networks. *2022 IEEE 18th Conference on Automation Science and Engineering (CASE)*, 1551&ndash;1556. [Publisher](https://ieeexplore.ieee.org/abstract/document/9926567)
+**Russell, M.**, & Wang, P. (2022). Improved representations for continual learning of novel motor health conditions through few-shot prototypical networks. *2022 IEEE 18th Conference on Automation Science and Engineering (CASE)*, 1551&ndash;1556. [Publisher](https://ieeexplore.ieee.org/abstract/document/9926567)
 
 Wang, P., Kershaw, J., **Russell, M.**, Zhang, J., Zhang, Y., & Gao, R. X. (2022). Data-driven process characterization and adaptive control in robotic arc welding. *CIRP Annals 71*(1), 45&ndash;48. [Publisher](https://www.sciencedirect.com/science/article/abs/pii/S0007850622000920?dgcid=coauthor)
 
@@ -40,4 +40,4 @@ Wang, P., **Russell, M.**, Kershaw, J., Xia, Y., Lv, T., Li, T., Ghassemi-Armaki
 
 **Russell, M.**, & Straub, J. (2017). Characterization of command software for an autonomous attitude determination and control system for spacecraft. *International Journal of Computers and Applications 39*(4), 198&ndash;209. [Online](https://www.tandfonline.com/doi/abs/10.1080/1206212X.2017.1329261)
 
-Hamlet, C., Straub, J., **Russell, M.**, & Kerlin, S. (2017). An incremental and approximate local outlier probability algorithm for instrusion detection and its evaluation. *Journal of Cybersecurity Technology 1*(2), 75&ndash;87. [Online](https://www.tandfonline.com/doi/full/10.1080/23742917.2016.1226651)
+Hamlet, C., Straub, J., **Russell, M.**, & Kerlin, S. (2017). An incremental and approximate local outlier probability algorithm for intrusion detection and its evaluation. *Journal of Cybersecurity Technology 1*(2), 75&ndash;87. [Online](https://www.tandfonline.com/doi/full/10.1080/23742917.2016.1226651)
