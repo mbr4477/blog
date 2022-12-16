@@ -10,6 +10,12 @@ title: Publications
 
 <h1 style="text-align: center;">2022</h1>
 
+**Russell, M.**, Wang, P., Liu, S., & Jawahir, I. S. (2022). *Mixed-up experience replay for adaptive online condition monitoring.* Manuscript submitted for publication.
+
+**Russell, M.**, Kershaw, J., Xia, Y., Lv, T., Li, Y., Ghassemi-Armaki, H., Carlson, B. E., & Wang, P. (2022). *Comparison and explanation of data-driven modeling for weld quality prediction in resistance spot welding.* Manuscript submitted for publication.
+
+**Russell, M.**, & Wang, P. (2022). *Normalizing flows for intelligent manufacturing.* Manuscript submitted for publication.
+
 **Russell, M.**, & Wang, P. (2022). Improved representations for continual learning of novel motor health conditions through few-shot prototypical networks. *2022 IEEE 18th Conference on Automation Science and Engineering (CASE)*, 1551&ndash;1556. [Publisher](https://ieeexplore.ieee.org/abstract/document/9926567)
 
 Wang, P., Kershaw, J., **Russell, M.**, Zhang, J., Zhang, Y., & Gao, R. X. (2022). Data-driven process characterization and adaptive control in robotic arc welding. *CIRP Annals 71*(1), 45&ndash;48. [Publisher](https://www.sciencedirect.com/science/article/abs/pii/S0007850622000920?dgcid=coauthor)
