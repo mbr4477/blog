@@ -11,7 +11,24 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(`
       {
         postsRemark: allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
+          sort: { fields: [frontmatter___date], order: DESC },
+          filter: { fileAbsolutePath: { regex: "\/content/blog\/"} },
+          limit: 1000
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                tags
+              }
+            }
+          }
+        },
+        pagesRemark: allMarkdownRemark(
+          filter: { fileAbsolutePath: { regex: "\/content/pages\/"} },
           limit: 1000
         ) {
           edges {
@@ -53,6 +70,17 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: post.node.fields.slug,
         previous,
         next,
+      },
+    })
+  })
+
+  const pages = result.data.pagesRemark.edges
+  pages.forEach(page => {
+    createPage({
+      path: page.node.fields.slug,
+      component: blogPost,
+      context: {
+        slug: page.node.fields.slug,
       },
     })
   })

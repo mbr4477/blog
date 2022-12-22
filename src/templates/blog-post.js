@@ -23,7 +23,6 @@ class BlogPostTemplate extends React.Component {
               style={{
                 marginTop: `1em`,
                 textAlign: "center",
-                fontWeight: 100,
                 fontSize: "3em",
                 lineHeight: `1.25em`
               }}

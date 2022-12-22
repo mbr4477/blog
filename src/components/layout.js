@@ -19,7 +19,7 @@ const Layout = (props) => {
             marginTop: `2em`,
             color: `black`,
             textAlign: `center`,
-            fontWeight: `normal`,
+            fontWeight: `100`,
             fontSize: `3em`
           }}
         >
@@ -52,7 +52,9 @@ const Layout = (props) => {
         <nav>
           <ul>
             <li><Link to={"/microblog"}>microblog</Link></li>
-            <li><Link to={"/papers"}>Publications</Link></li>
+            <li><Link to={"/papers"}>publications</Link></li>
+            <li><Link to={"/now"}>now</Link></li>
+            <li><Link to={"/uses"}>uses</Link></li>
           </ul>
         </nav>
       </>
@@ -67,7 +69,7 @@ const Layout = (props) => {
           }}>
           <h3
             style={{
-              fontWeight: 400,
+              fontWeight: `normal`,
               margin: 0,
               color: `black`,
               fontSize: `1.5em`
