@@ -45,10 +45,25 @@ class About extends React.Component {
         <div style={{ textAlign: 'center', marginBottom: 20 }}>
           <button onClick={(e) => { this.copyEmail() }}>Copy Email to Clipboard</button>
         </div>
+        
         <p>
-          I'm an Electrical Engineering/Machine Learning PhD Candidate at the University of Kentucky
+          I'm Emma's fiancée, an Electrical Engineering/Machine Learning PhD Candidate at the University of Kentucky,
           and recent six-tour software intern at NASA Johnson Space Center.
         </p>
+        <GatsbyImage
+            image={data.us_walking.childImageSharp.gatsbyImageData}
+            alt={"Emma and I walking outside."}
+            style={{
+              marginBottom: 0,
+              minWidth: 200,
+              display: `inline-block`,
+              float: `right`,
+              marginLeft: 20
+            }}
+            imgStyle={{
+              borderRadius: `4px`,
+            }}
+          />
         <p>
           I like embedded systems, spaceflight, cosmology, apologetics, music production, The Ohio State Buckeyes, Major League Baseball, machine learning, robots, software development, startups, entrepreneurship, traveling, puns, and coffee.
         </p>
@@ -74,6 +89,11 @@ export const pageQuery = graphql`
     avatar: file(absolutePath: { regex: "/profile-kid.jpg/" }) {
       childImageSharp {
         gatsbyImageData(layout: FIXED, width: 200, height: 200)
+      }
+    }
+    us_walking: file(absolutePath: { regex: "/us-walking.png/" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FIXED, width: 280)
       }
     }
     site {
