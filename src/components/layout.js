@@ -53,6 +53,7 @@ const Layout = (props) => {
           <ul>
             <li><Link to={"/microblog"}>microblog</Link></li>
             <li><Link to={"/papers"}>publications</Link></li>
+            <li><Link to={"/about"}>about</Link></li>
             <li><Link to={"/now"}>now</Link></li>
             <li><Link to={"/uses"}>uses</Link></li>
           </ul>

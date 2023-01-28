@@ -47,7 +47,7 @@ class About extends React.Component {
         </div>
         
         <p>
-          I'm Emma's fiancée, an Electrical Engineering/Machine Learning PhD Candidate at the University of Kentucky,
+          I'm Emma's fiancé, an Electrical Engineering/Machine Learning PhD Candidate at the University of Kentucky,
           and recent six-tour software intern at NASA Johnson Space Center.
         </p>
         <GatsbyImage
