@@ -28,7 +28,7 @@ class BlogIndex extends React.Component {
           const title = node.frontmatter.title || node.fields.slug
           const image = node.frontmatter.featuredImage
           return (
-            <article key={node.fields.slug} className="index-article grow">
+            <article key={node.fields.slug} className="index-article">
               {image ? (
                 <GatsbyImage
                   image={image.childImageSharp.gatsbyImageData}
@@ -37,7 +37,7 @@ class BlogIndex extends React.Component {
               ) : (
                 undefined
               )}
-              <header>
+              <div className="index-article-header">
                 <h3>
                   <Link
                     style={{
@@ -50,7 +50,7 @@ class BlogIndex extends React.Component {
                     {title}
                   </Link>
                 </h3>
-                <small class="date">{node.frontmatter.date}</small>
+                <small className="index-article-date">{node.frontmatter.date}</small>
                 <small>
                   {node.frontmatter.tags ? (
                     node.frontmatter.tags.map(tag => <Tag key={tag}>{tag}</Tag>)
@@ -58,8 +58,8 @@ class BlogIndex extends React.Component {
                     <></>
                   )}
                 </small>
-              </header>
-              <section>
+              </div>
+              <section className="index-article-content">
                 <p
                   dangerouslySetInnerHTML={{
                     __html: node.frontmatter.description || node.excerpt,

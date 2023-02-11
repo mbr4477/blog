@@ -13,16 +13,7 @@ const Layout = (props) => {
   if (isRoot) {
     header = (
       <>
-        <h1
-          style={{
-            marginBottom: `1em`,
-            marginTop: `2em`,
-            color: `black`,
-            textAlign: `center`,
-            fontWeight: `100`,
-            fontSize: `3em`
-          }}
-        >
+        <h1 className="header-title">
           <Link
             style={{
               boxShadow: `none`,
@@ -36,17 +27,7 @@ const Layout = (props) => {
             <br />
           </Link>
         </h1>
-        <h4
-          style={{
-            marginTop: 10,
-            marginBottom: `0em`,
-            fontFamily: "Newsreader",
-            fontWeight: `200`,
-            textAlign: `center`,
-            color: `black`,
-            fontSize: `1.2em`
-          }}
-        >
+        <h4 className="header-subtitle">
           <>{subtitle}</>
         </h4>
         <nav>
@@ -62,45 +43,26 @@ const Layout = (props) => {
     )
   } else {
     header = (
-      <div>
-        <div
-          id={`header-bar`}
-          style={{
-            padding: `20px 10%`,
-          }}>
-          <h3
+      <div className="header-bar-article">
+        <h3 className="header-title-article">
+          <Link
             style={{
-              fontWeight: `normal`,
-              margin: 0,
-              color: `black`,
-              fontSize: `1.5em`
-            }}>
-            <Link
-              style={{
-                boxShadow: `none`,
-                textDecoration: `none`,
-                color: `inherit`,
-              }}
-              to={`/`}
-            >
-              {title.toLowerCase()}
-            </Link>
-          </h3>
-        </div>
+              boxShadow: `none`,
+              textDecoration: `none`,
+              color: `inherit`,
+            }}
+            to={`/`}
+          >
+            {title.toLowerCase()}
+          </Link>
+        </h3>
       </div>
     )
   }
   return (
     <>
       <header>{header}</header>
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: 600,
-          padding: `2em 2em`,
-        }}
-      >
+      <div className="content">
         <main>{children}</main>
         <div class="copyright">
           © {new Date().getFullYear()}, Built with

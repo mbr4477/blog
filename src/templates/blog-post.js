@@ -19,45 +19,17 @@ class BlogPostTemplate extends React.Component {
         />
         <article>
           <header>
-            <h1
-              style={{
-                marginTop: `1em`,
-                textAlign: "center",
-                fontSize: "3em",
-                lineHeight: `1.25em`
-              }}
-            >
+            <h1 className="post-title">
               {post.frontmatter.title}
             </h1>
-            <p
-              style={{
-                display: `block`,
-                marginBottom: `1em`,
-                textAlign: "center"
-              }}
-            >
-              <p>{post.frontmatter.date}</p>
-              <p style={{
-                marginLeft: "auto",
-                marginRight: "auto",
-                textAlign: "justify",
-                fontSize: "1em",
-                width: `60%`
-              }}><em>{post.frontmatter.description}</em></p>
-              <p><small>{tags ? tags.map((tag) => <Tag key={tag}>{tag}</Tag>) : <></>}</small></p>
-              <p style={{
-                fontSize: "2em",
-                color: "#ddd",
-                letterSpacing: 50,
-                marginRight: -50,
-                textAlign: "center",
-                marginTop: `1em`,
-                marginBottom: `1em`,
-              }}>&#10045;&#10045;&#10045;</p>
+            <p className="post-frontmatter">
+              <p className="post-frontmatter-date">{post.frontmatter.date}</p>
+              <p className="post-frontmatter-description"><em>{post.frontmatter.description}</em></p>
+              <p className="post-frontmatter-tags">{tags ? tags.map((tag) => <Tag key={tag}>{tag}</Tag>) : <></>}</p>
             </p>
           </header>
-          <section style={{ textAlign: "justify" }} dangerouslySetInnerHTML={{ __html: post.html }} />
-          <footer>
+          <section className="post-content" dangerouslySetInnerHTML={{ __html: post.html }} />
+          <footer className = "post-footer">
             <hr
               style={{
                 marginBottom: `1em`,
@@ -67,7 +39,7 @@ class BlogPostTemplate extends React.Component {
           </footer>
         </article>
 
-        <nav>
+        <nav className="post-nav">
           <ul
             style={{
               display: `flex`,
