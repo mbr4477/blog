@@ -4,6 +4,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Tag from "../components/tag"
+import "./post.css"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -17,7 +18,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article>
+        <article className="post">
           <header>
             <h1 className="post-title">
               {post.frontmatter.title}

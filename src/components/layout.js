@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import "katex/dist/katex.min.css"
+import Bio from "../components/bio"
 
 const Layout = (props) => {
   const { location, title, subtitle, children } = props
@@ -12,8 +13,8 @@ const Layout = (props) => {
 
   if (isRoot) {
     header = (
-      <>
-        <h1 className="header-title">
+      <div className="index-header">
+        <h1 className="index-header-title">
           <Link
             style={{
               boxShadow: `none`,
@@ -27,9 +28,12 @@ const Layout = (props) => {
             <br />
           </Link>
         </h1>
-        <h4 className="header-subtitle">
+        <h4 className="index-header-subtitle">
           <>{subtitle}</>
         </h4>
+        <div className="index-header-bio">
+          <Bio />
+        </div>
         <nav>
           <ul>
             <li><Link to={"/microblog"}>microblog</Link></li>
@@ -39,7 +43,7 @@ const Layout = (props) => {
             <li><Link to={"/uses"}>uses</Link></li>
           </ul>
         </nav>
-      </>
+      </div>
     )
   } else {
     header = (
@@ -60,7 +64,7 @@ const Layout = (props) => {
     )
   }
   return (
-    <>
+    <div className={(isRoot) ? "index" : "detail"}>
       <header>{header}</header>
       <div className="content">
         <main>{children}</main>
@@ -70,7 +74,7 @@ const Layout = (props) => {
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

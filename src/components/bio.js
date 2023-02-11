@@ -14,7 +14,7 @@ const Bio = () => {
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile.jpg/" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, width: 75, height: 75)
+          gatsbyImageData(layout: FIXED, width: 100, height: 100)
         }
       }
       site {
@@ -30,25 +30,14 @@ const Bio = () => {
 
   const { author, social } = data.site.siteMetadata
   return (
-    <div
-      style={{
-        display: `flex`,
-      }}
-    >
+    <div className="bio">
       <GatsbyImage
         image={data.avatar.childImageSharp.gatsbyImageData}
         alt={author}
-        style={{
-          marginRight: `1em`,
-          marginBottom: 0,
-          minWidth: 75,
-          borderRadius: `100%`,
-        }}
-        imgStyle={{
-          borderRadius: `50%`,
-        }}
+        className="bio-image-wrapper"
+        imgClassName="bio-image"
       />
-      <p>
+      <p className="bio-content">
         Written by <strong>{author}</strong> who follows Jesus and studies machine learning at the University of Kentucky.
         {` `}
         <Link to="/about">Get to know him</Link> or check out his <a href={`https://github.com/${social.github}`}>

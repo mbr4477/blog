@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Tag from "../components/tag"
@@ -21,54 +20,53 @@ class BlogIndex extends React.Component {
         subtitle={subtitle}
       >
         <SEO title="All posts" />
-        <article className="index-article index-bio">
-          <Bio />
-        </article>
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          const image = node.frontmatter.featuredImage
-          return (
-            <article key={node.fields.slug} className="index-article">
-              {image ? (
-                <GatsbyImage
-                  image={image.childImageSharp.gatsbyImageData}
-                  style={{ maxHeight: 200 }}
-                />
-              ) : (
-                undefined
-              )}
-              <div className="index-article-header">
-                <h3>
-                  <Link
-                    style={{
-                      boxShadow: `none`,
-                      textDecoration: `none`,
-                      color: `inherit`,
+        <div className="index-posts">
+          {posts.map(({ node }) => {
+            const title = node.frontmatter.title || node.fields.slug
+            const image = node.frontmatter.featuredImage
+            return (
+              <article key={node.fields.slug} className="index-article">
+                {image ? (
+                  <GatsbyImage
+                    image={image.childImageSharp.gatsbyImageData}
+                    style={{ maxHeight: 200 }}
+                  />
+                ) : (
+                  undefined
+                )}
+                <div className="index-article-header">
+                  <h3 className="index-article-title">
+                    <Link
+                      style={{
+                        boxShadow: `none`,
+                        textDecoration: `none`,
+                        color: `inherit`,
+                      }}
+                      to={node.fields.slug}
+                    >
+                      {title}
+                    </Link>
+                  </h3>
+                  <span className="index-article-date">{node.frontmatter.date}</span>
+                  <span className="index-article-tags">
+                    {node.frontmatter.tags ? (
+                      node.frontmatter.tags.map(tag => <Tag key={tag}>{tag}</Tag>)
+                    ) : (
+                      <></>
+                    )}
+                  </span>
+                </div>
+                <section className="index-article-content">
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: node.frontmatter.description || node.excerpt,
                     }}
-                    to={node.fields.slug}
-                  >
-                    {title}
-                  </Link>
-                </h3>
-                <small className="index-article-date">{node.frontmatter.date}</small>
-                <small>
-                  {node.frontmatter.tags ? (
-                    node.frontmatter.tags.map(tag => <Tag key={tag}>{tag}</Tag>)
-                  ) : (
-                    <></>
-                  )}
-                </small>
-              </div>
-              <section className="index-article-content">
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </section>
-            </article>
-          )
-        })}
+                  />
+                </section>
+              </article>
+            )
+          })}
+        </div>
       </Layout>
     )
   }
