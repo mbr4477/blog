@@ -2,7 +2,7 @@
 title: Making Sense of the Embedded Landscape
 date: 2020-12-25
 tags: ["iot", "arduino"]
-featuredImage: embedded/argon.jpg
+featuredImage: argon.jpg
 ---
 The world of embedded hardware and firmware is confusing.
 
@@ -14,7 +14,7 @@ I'd guess the culprit is the variation among manufacturers which becomes accentu
 
 A microcontroller is an entire computer on a chip. By "computer," I mean "has all the pieces of a computer," since in most cases it is absurd to even think of running Windows or macOS on these things. That will become apparent in a minute. In any event, these chips have all the core components --- a CPU, RAM (working memory), Flash storage (long term memory), and inputs and outputs. Those input/outputs (I/Os) could be single digital pins that can be turned on or off, sets of digital pins that work together as a communications bus, or special pins that can read analog voltages or simulate analog outputs by quickly flicking the pin on and off. Most of these I/O pins are referred to as General Purpose Input Output or GPIO. The communication buses could be things like Inter-Integrated Circuit (I2C), Serial Peripheral Interface (SPI), and Universal Asynchronous Receiver Transmitter (UART) ports. All these components are put on a single chip, and the necessary connections are made accessible via somewhere between 8 and 100+ tiny pins. The black chip in the middle of the red board below is the [TM4C123GH6PM](https://www.ti.com/product/TM4C123GH6PM#:~:text=The%20TM4C123GH6PM%20microcontroller%20is%20targeted,control%2C%20transportation%2C%20and%20fire%20and) microcontroller from Texas Instruments. With a whopping 256 kilobytes of Flash memory (your computer probably has 256 or more *gigabytes*, roughly a million times more), 32 kilobytes of RAM (your computer likely has 250,000 times that), and 80 MHz clock speed (your computer is likely 25 times faster), I hope it now makes sense that these tiny chips can't run macOS. But they are surprisingly handy for lots of things that require low power consumption and small footprints.
 
-![tiva](embedded/TITivaLaunchpad2A.jpg)
+![tiva](TITivaLaunchpad2A.jpg)
 
 *A microcontroller development board from Texas Instruments that uses the T4MC123GH6PM microcontroller (image from [here](https://processors.wiki.ti.com/index.php/Getting_Started_with_the_TIVA%E2%84%A2_C_Series_TM4C123G_LaunchPad)).*
 
@@ -30,7 +30,7 @@ The natural question might be "do I have to work with all those tiny pins or can
 
 Some development boards include Adafruit's Feather footprint which has boards for [ESP32 chips](https://www.adafruit.com/product/2821) with WiFi and Bluetooth, the [Arduino Nano 33 BLE](https://store.arduino.cc/usa/nano-33-ble) which has Bluetooth and uses the same microcontroller as the [Particle Boron LTE](https://www.adafruit.com/product/3998) (the nRF52840), and the ever popular [Arduino Uno](https://store.arduino.cc/usa/arduino-uno-rev3) based on the ATmega328P. Some work at 5 volts, others at 3.3 volts, and most have USB ports. 
 
-![boards](embedded/boards.jpg)
+![boards](boards.jpg)
 
 When starting a project, the big things to think about are:
 
@@ -140,6 +140,6 @@ Now it's possible that the Arduino library doesn't directly interact with the bo
 
 To sum up everything, check out this diagram that shows how all the pieces fit together. Luckily, to build something cool, you don't need to understand how to do each piece yourself, but with this context you can know what you do and don't need to pay attention to when working on your project. If your board already has Arduino support, you can probably find a library to talk to that SPI display you have. If not, you might need to write your own by looking at what the equivalent Arduino library does and rewriting it using your board SDK. The embedded landscape can be a little confusing at first, but mastering even a small portion of it can be like gaining a superpower.
 
-![Architecture and Workflow](embedded/architecture.jpg)
+![Architecture and Workflow](architecture.jpg)
 
 *(Header image from [Particle](https://store.particle.io/collections/gen-3/products/argon-kit))*

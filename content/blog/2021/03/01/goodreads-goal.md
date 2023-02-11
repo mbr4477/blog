@@ -4,8 +4,6 @@ description: A review of my book reading conundrum. We meet Mr. Metropolis and M
 date: 2021-03-01
 ---
 
-
-
 After my previous post on simulating how many books I will read this year, I naturally asked myself, "Well, if 30 pages per day and taking 3 days to find another book to read won't cut it, how fast *should* I read and how fast *should* I find new books if I want to meet my Goodreads goal?" Undoubtedly, you have also lost sleep over this question, wondering if there is any hope left for my literary aspirations. No longer. Welcome to the exciting conclusion of *Matthew, Monte Carlo, and the Unrealistic Reading Goal*.
 
 Before we tackle that question, I'll review the Monte Carlo simulation setup with new (and slightly) improved code since I want this post to be an end-to-end practical walk-through of Monte Carlo simulation that you can use to solve your own real-world problems. To jumpstart you, I've put all the code from this post on [Google Colab](https://colab.research.google.com/drive/1NHZSNM8dDj4UTFk1zepvukKuwsnhWr9t?usp=sharing). Grab my email over on my about page and show me what you come up with!
@@ -120,7 +118,7 @@ plt.show()
 ​    
 
 
-![png](images/output_11_1.png)
+![png](output_11_1.png)
     
 
 
@@ -236,7 +234,7 @@ plt.show()
 ```
 
 
-![png](images/output_23_0.png)
+![png](output_23_0.png)
     
 
 
@@ -276,7 +274,7 @@ plt.show()
 ​    
 
 
-![png](images/output_26_1.png)
+![png](output_26_1.png)
     
 
 Yes! We do get an expected output of almost exactly 46 books, although it is coincidental that the expected value lines up so closely in this case.
