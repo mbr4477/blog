@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+@media screen and (min-width: 600px) {
+  body {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+  }
+  .index-header {
+    float: left;
+    width: 35%;
+    height: 100%;
+    padding-top: 50pt;
+    padding-right: 20pt;
+    padding-left: 75pt;
+    box-sizing: border-box;
+  }
+  .index .content {
+    padding-top: 50pt;
+    float: right;
+    width: 60%;
+    overflow: auto;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-right: 75pt;
+  }
+  
+  .index-header .index-header-bio {
+    border-right: 1px solid #FF7979;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+  }
+  .index-header {
+    padding-top: 50pt;
+    padding-right: 20pt;
+    padding-left: 20pt;
+  }
+  .index .content {
+    padding-top: 50pt;
+    box-sizing: border-box;
+    padding-right: 10pt;
+    padding-left: 20pt;
+  }  
+  .index-header .index-header-bio {
+    border-bottom: 1px solid #FF7979;
+  }
+}
+
+
+.index-header-title {
+  display: none;
+}
+
+.index-header-subtitle {
+  display: none;
+}
+
+.index-header .bio-content {
+  color: #aaa;
+  font-size: 0.9em;
+  font-style: italic;
+  font-family: "Work Sans";
+}
+
+.index-header .bio-content::before {
+  content: "Matthew Russell\A\A";
+  font-size: 1.5em;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: black;
+  white-space: pre;
+}
+
+.index-header .bio-content a {
+  color: #777;
+}
+
+.bio-image-wrapper {
+  border-radius: 50%;
+}
+
+.index-posts::before {
+  content: "blog";
+  font-weight: bold;
+  font-family: "Work Sans";
+  font-size: 5em;
+  color: #eee;
+}
+
+.index-article {
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: ease-in-out 0.2s;
+  overflow: hidden;
+  background: white;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.index-article-title {
+  position: relative;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 5pt;
+  font-size: 1.3em;
+}
+
+.index-article-date {
+  font-style: italic;
+  margin-right: 10pt;
+}
+
+.index-article .tag {
+  padding: 5px;
+  background-color: #eee;
+  color: #555;
+  text-transform: uppercase;
+  margin-right: 5pt;
+  text-decoration: none;
+  font-family: "Work Sans";
+  font-size: 0.8em;
+  border-radius: 4pt;
+  letter-spacing: 0.5pt;
+  box-sizing: content-box;
+}
+
+
+
+header nav {
+  margin-top: 40px;
+}
+
+header nav ul {
+  padding: 0;
+}
+
+header nav ul li {
+  list-style: none;
+  text-transform: lowercase;
+  font-family: "Work Sans";
+  padding-bottom: 5pt;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  margin: 0;
+}
+
+header nav ul li a:hover {
+  color: black;
+}
+
+.detail .content {
+  height: 100vh;
+  overflow: auto;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Work Sans";
+}
+
+@media screen and (min-width: 600px) {
+  .detail main {
+    max-width: 500pt;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .detail main {
+    margin-top: 75pt;
+    margin-right: 20pt;
+    margin-left: 20pt;
+  }
+  .detail .post-title {
+    font-size: 1.5em;
+  }
+}
+
+.post header {
+  font-family: "Work Sans";
+}
+
+.post-title {
+  font-size: 2.5em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.post-frontmatter {
+  max-width: 250pt;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 40pt;
+}
+
+.post-frontmatter-date {
+  font-weight: bold;
+}
+
+.post-content {
+  font-size: 16px;
+  line-height: 1.7em;
+  text-align: justify;
+  font-family: "Inter";
+}
+
+.post blockquote {
+  color: #777;
+  font-style: italic;
+  padding: 10px 10px 10px 15px;
+  border-left: solid 2px;
+  margin-left: 25px;
+}
+
+.post code {
+  font-size: smaller !important;
+}
+
+.post div.gatsby-highlight code {
+  display: block;
+  line-height: 1.5em;
+}
+
+.post footer>hr::after {
+  font-family: "Times New Roman";
+  display: inline-block;
+  content: "\00A7";
+  transform: translateX(-50%) translate(150px, -50%) rotate(90deg);
+  color: #ccc;
+  font-size: 50px;
+}
+
+.post footer>hr {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  max-width: 300px;
+  border: none;
+  border-top: solid 1.8px #ccc;
+  height: 2px;
+  overflow: visible;
+}
+
+.post hr {
+  border: none;
+  border-top: solid 1px #ccc;
+  height: 2px;
+  margin-bottom: 1em;
+}
+
+.post div.copyright {
+  margin-top: 3em;
+  text-align: center;
+  color: #888;
+}
+
+.post .gatsby-resp-image-figcaption {
+  text-align: center;
+  font-style: italic;
+}
+
+.detail .header-bar-article {
+  display: none;
+}
+
+.detail .detail-back-button {
+  position: absolute;
+  top: 20pt;
+  left: 30pt;
+  font-family: "Work Sans";
+  border: 1px solid #eee;
+  padding: 5px 20px;
+  border-radius: 25px;
+  background-color: white;
+}
+
+.detail .detail-back-button:hover {
+  background-color: #eee;
+}
+
+.detail .detail-back-button {
+  text-decoration: none;
+  color: black;
+}

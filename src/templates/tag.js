@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Tag from "../components/tag"
 import { GatsbyImage } from "gatsby-plugin-image"
-import "../pages/index.css"
 
 const TagsTemplate = ({ location, pageContext, data }) => {
   const { tag } = pageContext

@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Tag from "../components/tag"
 import { GatsbyImage } from "gatsby-plugin-image"
-import "./index.css"
+import "./theme.css"
 
 class BlogIndex extends React.Component {
   render() {
