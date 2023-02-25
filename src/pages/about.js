@@ -1,13 +1,31 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
 class About extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      copyButtonText: "Copy Email to Clipboard",
+      copyButtonExtraClass: "",
+      copyButtonDisabled: false
+    }
+  }
   copyEmail() {
-    navigator.clipboard.writeText("matthew@mruss.dev").then()
+    navigator.clipboard.writeText("matthew@mruss.dev").then((res) => {
+      this.setState({
+        copyButtonText: "Email Copied",
+        copyButtonDisabled: true
+      })
+      setTimeout(() => {
+        this.setState({
+          copyButtonText: "Copy Email to Clipboard",
+          copyButtonDisabled: false
+        })
+      }, 5000)
+    })
   }
   render() {
     const { data } = this.props
@@ -18,24 +36,19 @@ class About extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle} subtitle={subtitle}>
         <SEO title="About" />
+        <Link to={"/"} className="about-home-link">&larr; Home</Link>
         <div style={{
-          textAlign: `center`
+          textAlign: `center`,
+          marginTop: `2em`
         }}>
           <GatsbyImage
-            image={data.avatar.childImageSharp.gatsbyImageData}
-            alt={author}
+            image={data.engaged.childImageSharp.gatsbyImageData}
+            alt={"Emma and I."}
             style={{
-              marginRight: "auto",
-              marginLeft: "auto",
-              marginBottom: 0,
-              minWidth: 200,
-              borderRadius: `100%`,
-              borderWidth: `10px`,
-              borderColor: `#eee`,
-              borderStyle: `solid`,
-            }}
-            imgStyle={{
+              width: `200px`,
+              height: `200px`, 
               borderRadius: `50%`,
+              display: `inline-block`,
             }}
           />
           <h2>
@@ -43,27 +56,20 @@ class About extends React.Component {
           </h2>
         </div>
         <div style={{ textAlign: 'center', marginBottom: 20 }}>
-          <button onClick={(e) => { this.copyEmail() }}>Copy Email to Clipboard</button>
+          <button
+            className="copy-email-button"
+            disabled={this.state.copyButtonDisabled}
+            onClick={(e) => {
+              this.copyEmail()
+            }}>
+            {this.state.copyButtonText}
+          </button>
         </div>
-        
+
         <p>
           I'm Emma's fiancé, an Electrical Engineering/Machine Learning PhD Candidate at the University of Kentucky,
           and recent six-tour software intern at NASA Johnson Space Center.
         </p>
-        <GatsbyImage
-            image={data.us_walking.childImageSharp.gatsbyImageData}
-            alt={"Emma and I walking outside."}
-            style={{
-              marginBottom: 0,
-              minWidth: 200,
-              display: `inline-block`,
-              float: `right`,
-              marginLeft: 20
-            }}
-            imgStyle={{
-              borderRadius: `4px`,
-            }}
-          />
         <p>
           I like embedded systems, spaceflight, cosmology, apologetics, music production, The Ohio State Buckeyes, Major League Baseball, machine learning, robots, software development, startups, entrepreneurship, traveling, puns, and coffee.
         </p>
@@ -91,9 +97,9 @@ export const pageQuery = graphql`
         gatsbyImageData(layout: FIXED, width: 200, height: 200)
       }
     }
-    us_walking: file(absolutePath: { regex: "/us-walking.png/" }) {
+    engaged: file(absolutePath: { regex: "/engaged-banner.jpg/" }) {
       childImageSharp {
-        gatsbyImageData(layout: FIXED, width: 280)
+        gatsbyImageData(layout: FIXED, width: 512)
       }
     }
     site {

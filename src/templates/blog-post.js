@@ -13,7 +13,7 @@ class BlogPostTemplate extends React.Component {
     const tags = this.props.data.markdownRemark.frontmatter.tags
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <Link to={"/"} className="detail-back-button">All Posts</Link>
+        <Link to={"/"} className="detail-back-button">&larr; All Posts</Link>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}

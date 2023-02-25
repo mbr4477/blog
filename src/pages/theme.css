@@ -195,15 +195,32 @@ h1, h2, h3, h4 {
     margin-right: auto;
     margin-left: auto;
   }
+  .detail .detail-back-button {
+    position: absolute;
+    top: 20pt;
+    left: 30pt;
+    font-family: "Work Sans";
+    border: 1px solid #eee;
+    padding: 5px 20px;
+    border-radius: 25px;
+    background-color: white;
+  }
 }
 @media screen and (max-width: 600px) {
   .detail main {
-    margin-top: 75pt;
+    margin-top: 20pt;
     margin-right: 20pt;
     margin-left: 20pt;
   }
   .detail .post-title {
     font-size: 1.5em;
+  }
+  .detail .detail-back-button {
+    font-family: "Work Sans";
+    border: 1px solid #eee;
+    padding: 5px 20px;
+    border-radius: 25px;
+    background-color: white;
   }
 }
 
@@ -295,17 +312,6 @@ h1, h2, h3, h4 {
   display: none;
 }
 
-.detail .detail-back-button {
-  position: absolute;
-  top: 20pt;
-  left: 30pt;
-  font-family: "Work Sans";
-  border: 1px solid #eee;
-  padding: 5px 20px;
-  border-radius: 25px;
-  background-color: white;
-}
-
 .detail .detail-back-button:hover {
   background-color: #eee;
 }
@@ -313,4 +319,40 @@ h1, h2, h3, h4 {
 .detail .detail-back-button {
   text-decoration: none;
   color: black;
+}
+
+.copy-email-button {
+  border: none;
+  background: #ddd;
+  color: #555;
+  padding: 5px 10px;
+  border-radius: 4px;
+  width: 250px;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.copy-email-button:hover {
+  background: #aaa;
+  cursor: pointer;
+}
+
+.copy-email-button:disabled {
+  background: #bddbb8;
+  cursor: default;
+  color: #698066;
+}
+
+.about-home-link {
+  display: inline-block;
+  margin-top: 1em;
+  color: #777;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 2em;
 }
