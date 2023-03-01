@@ -8,6 +8,12 @@ title: Publications
     </a>
 </div>
 
+<h1 style="text-align: center;">2023</h1>
+
+Ippili, S., **Russell, M. B.**, Wang, P., & Herrin, D. W. (2023). *Vector based acoustic sensing for mechanical fault diganosis through convolutional neural networks.* Manuscript submitted for publication.
+
+---
+
 <h1 style="text-align: center;">2022</h1>
 
 **Russell, M.**, Wang, P., Liu, S., & Jawahir, I. S. (2022). *Mixed-up experience replay for adaptive online condition monitoring.* Manuscript submitted for publication.
