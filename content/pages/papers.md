@@ -14,13 +14,13 @@ Ippili, S., **Russell, M. B.**, Wang, P., & Herrin, D. W. (2023). *Vector based 
 
 **Russell, M.**, Kershaw, J., Xia, Y., Lv, T., Li, Y., Ghassemi-Armaki, H., Carlson, B. E., & Wang, P. (in press). Comparison and explanation of data-driven modeling for weld quality prediction in resistance spot welding. *Journal of Intelligent Manufacturing.*
 
+**Russell, M.**, & Wang, P. (in press). Normalizing flows for intelligent manufacturing. Accepted to Manufacturing Science & Engineering Conference (MSEC) 2023.
+
 ---
 
 <h1 style="text-align: center;">2022</h1>
 
 **Russell, M.**, Wang, P., Liu, S., & Jawahir, I. S. (2022). *Mixed-up experience replay for adaptive online condition monitoring.* Manuscript submitted for publication.
-
-**Russell, M.**, & Wang, P. (2022). *Normalizing flows for intelligent manufacturing.* Manuscript submitted for publication.
 
 **Russell, M.**, & Wang, P. (2022). Improved representations for continual learning of novel motor health conditions through few-shot prototypical networks. *2022 IEEE 18th Conference on Automation Science and Engineering (CASE)*, 1551&ndash;1556. [Publisher](https://ieeexplore.ieee.org/abstract/document/9926567)
 
