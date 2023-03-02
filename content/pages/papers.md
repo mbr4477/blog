@@ -12,13 +12,13 @@ title: Publications
 
 Ippili, S., **Russell, M. B.**, Wang, P., & Herrin, D. W. (2023). *Vector based acoustic sensing for mechanical fault diganosis through convolutional neural networks.* Manuscript submitted for publication.
 
+**Russell, M.**, Kershaw, J., Xia, Y., Lv, T., Li, Y., Ghassemi-Armaki, H., Carlson, B. E., & Wang, P. (in press). Comparison and explanation of data-driven modeling for weld quality prediction in resistance spot welding. *Journal of Intelligent Manufacturing.*
+
 ---
 
 <h1 style="text-align: center;">2022</h1>
 
 **Russell, M.**, Wang, P., Liu, S., & Jawahir, I. S. (2022). *Mixed-up experience replay for adaptive online condition monitoring.* Manuscript submitted for publication.
-
-**Russell, M.**, Kershaw, J., Xia, Y., Lv, T., Li, Y., Ghassemi-Armaki, H., Carlson, B. E., & Wang, P. (2022). *Comparison and explanation of data-driven modeling for weld quality prediction in resistance spot welding.* Manuscript submitted for publication.
 
 **Russell, M.**, & Wang, P. (2022). *Normalizing flows for intelligent manufacturing.* Manuscript submitted for publication.
 
