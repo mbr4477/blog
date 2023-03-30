@@ -12,7 +12,7 @@ title: Publications
 
 Ippili, S., **Russell, M. B.**, Wang, P., & Herrin, D. W. (2023). *Vector based acoustic sensing for mechanical fault diganosis through convolutional neural networks.* Manuscript submitted for publication.
 
-**Russell, M.**, Wang, P., Liu, S., & Jawahir, I. S. (in press). Mixed-up experience replay for adaptive online condition monitoring. *IEEE Transactions on Industrial Electronics.*
+**Russell, M.**, Wang, P., Liu, S., & Jawahir, I. S. (in press). Mixed-up experience replay for adaptive online condition monitoring. *IEEE Transactions on Industrial Electronics.* [PDF](files/ALL_22-TIE-4784.pdf)
 
 **Russell, M.**, Kershaw, J., Xia, Y., Lv, T., Li, Y., Ghassemi-Armaki, H., Carlson, B. E., & Wang, P. (in press). Comparison and explanation of data-driven modeling for weld quality prediction in resistance spot welding. *Journal of Intelligent Manufacturing.*
 
@@ -22,19 +22,19 @@ Ippili, S., **Russell, M. B.**, Wang, P., & Herrin, D. W. (2023). *Vector based 
 
 <h1 style="text-align: center;">2022</h1>
 
-**Russell, M.**, & Wang, P. (2022). Improved representations for continual learning of novel motor health conditions through few-shot prototypical networks. *2022 IEEE 18th Conference on Automation Science and Engineering (CASE)*, 1551&ndash;1556. [Publisher](https://ieeexplore.ieee.org/abstract/document/9926567)
+**Russell, M.**, & Wang, P. (2022). Improved representations for continual learning of novel motor health conditions through few-shot prototypical networks. *2022 IEEE 18th Conference on Automation Science and Engineering (CASE)*, 1551&ndash;1556. [Publisher](https://ieeexplore.ieee.org/abstract/document/9926567) [PDF](files/RussellWang_CASE2022_FINAL.pdf)
 
-Wang, P., Kershaw, J., **Russell, M.**, Zhang, J., Zhang, Y., & Gao, R. X. (2022). Data-driven process characterization and adaptive control in robotic arc welding. *CIRP Annals 71*(1), 45&ndash;48. [Publisher](https://www.sciencedirect.com/science/article/abs/pii/S0007850622000920?dgcid=coauthor)
+Wang, P., Kershaw, J., **Russell, M.**, Zhang, J., Zhang, Y., & Gao, R. X. (2022). Data-driven process characterization and adaptive control in robotic arc welding. *CIRP Annals 71*(1), 45&ndash;48. [Publisher](https://www.sciencedirect.com/science/article/abs/pii/S0007850622000920?dgcid=coauthor) [PDF](files/CIRP2022_RoboticWelding_Submission.pdf)
 
 Wang, P., **Russell, M.**, Kershaw, J., Xia, Y., Lv, T., Li, T., Ghassemi-Armaki, H., & Carlson, B. E. (2022). Interpretable data-driven prediction of resistance spot weld quality. *2022 International Symposium on Flexible Automation (ISFA).*
 
-**Russell, M.**, & Wang, P. (2022). Physics-informed deep learning for signal compression and reconstruction of big data in industrial condition monitoring. *Mechanical Systems and Signal Processing 168*, 108709. [Publisher](https://www.sciencedirect.com/science/article/abs/pii/S0888327021010293)
+**Russell, M.**, & Wang, P. (2022). Physics-informed deep learning for signal compression and reconstruction of big data in industrial condition monitoring. *Mechanical Systems and Signal Processing 168*, 108709. [Publisher](https://www.sciencedirect.com/science/article/abs/pii/S0888327021010293) [PDF](files/2021-11-18_MSSP_AE_Compression_Round2.pdf)
 
 ---
 
 <h1 style="text-align: center;">2021</h1>
 
-**Russell, M. B.**, King, E. M., Parrish, C. A., & Wang, P. (2021). Stochastic modeling for tracking and prediction of gradual and transient battery performance degradation. *Journal of Manufacturing Systems 59*, 663&ndash;674. [Publisher](https://www.sciencedirect.com/science/article/abs/pii/S0278612521000881)
+**Russell, M. B.**, King, E. M., Parrish, C. A., & Wang, P. (2021). Stochastic modeling for tracking and prediction of gradual and transient battery performance degradation. *Journal of Manufacturing Systems 59*, 663&ndash;674. [Publisher](https://www.sciencedirect.com/science/article/abs/pii/S0278612521000881) [PDF](files/promfg_NAMARC_russell.pdf)
 
 **Russell, M.**, Hong, P., Blakely, L., Kirkham, M., Enyoghasi, C., Wang, P., & Badurdeen, F. (2021). Smartphone app design for product use sustainability evaluation. *EcoDesign 2021 International Symposium*.
 
