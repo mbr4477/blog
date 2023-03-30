@@ -72,7 +72,7 @@ you can leverage all the associated math to pose and answer complex questions&md
 
 [^1]: Don't worry, I'm sure it's just as cool or cooler than the batmobile.
 
-[^2]: Forcing the total probability to add up to 100% is just a formal way of saying that *something* has to happen all of the time. We can't say that a coin flip will be heads 40% of the time and tails 40% of the time, but nothing happens the remaining 20% of the time. That makes no sednse.
+[^2]: Forcing the total probability to add up to 100% is just a formal way of saying that *something* has to happen all of the time. We can't say that a coin flip will be heads 40% of the time and tails 40% of the time, but nothing happens the remaining 20% of the time. That makes no sense.
 
 [^3]: I suppose whether you think this is useful is a matter of personal conviction.
 
