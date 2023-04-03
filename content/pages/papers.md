@@ -12,9 +12,9 @@ title: Publications
 
 Ippili, S., **Russell, M. B.**, Wang, P., & Herrin, D. W. (2023). *Vector based acoustic sensing for mechanical fault diagnosis through convolutional neural networks.* Manuscript submitted for publication.
 
-**Russell, M.**, Wang, P., Liu, S., & Jawahir, I. S. (in press). Mixed-up experience replay for adaptive online condition monitoring. *IEEE Transactions on Industrial Electronics.* [[Publisher](https://ieeexplore.ieee.org/document/10083059), [PDF](files/ALL_22-TIE-4784.pdf)]
+**Russell, M.**, Wang, P., Liu, S., & Jawahir, I. S. (2023). Mixed-up experience replay for adaptive online condition monitoring. *IEEE Transactions on Industrial Electronics.* [[Publisher](https://ieeexplore.ieee.org/document/10083059), [PDF](files/ALL_22-TIE-4784.pdf)]
 
-**Russell, M.**, Kershaw, J., Xia, Y., Lv, T., Li, Y., Ghassemi-Armaki, H., Carlson, B. E., & Wang, P. (in press). Comparison and explanation of data-driven modeling for weld quality prediction in resistance spot welding. *Journal of Intelligent Manufacturing.* [[Publisher](https://link.springer.com/article/10.1007/s10845-023-02108-1), [Read-Only](https://rdcu.be/c8ZSO)]
+**Russell, M.**, Kershaw, J., Xia, Y., Lv, T., Li, Y., Ghassemi-Armaki, H., Carlson, B. E., & Wang, P. (2023). Comparison and explanation of data-driven modeling for weld quality prediction in resistance spot welding. *Journal of Intelligent Manufacturing.* [[Publisher](https://link.springer.com/article/10.1007/s10845-023-02108-1), [Read-Only](https://rdcu.be/c8ZSO)]
 
 **Russell, M.**, & Wang, P. (in press). Normalizing flows for intelligent manufacturing. Accepted to Manufacturing Science & Engineering Conference (MSEC) 2023.
 
