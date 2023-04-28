@@ -12,6 +12,8 @@ title: Publications
 
 **Russell, M.**, & Wang, P. (2023). *Maximizing model generalization for manufacturing with self-supervised learning and federated learning.* Manuscript submitted for publication. [[Preprint](https://arxiv.org/abs/2304.14398)]
 
+**Russell, M. B.** (2023). *Generalizable and adaptable data-driven methods for overcoming barriers to practical industrial condition monitoring.* [Doctoral dissertation, University of Kentucky] UKnowledge. https://uknowledge.uky.edu/ece_etds/190/
+
 Ippili, S., **Russell, M. B.**, Wang, P., & Herrin, D. W. (2023). *Vector based acoustic sensing for mechanical fault diagnosis through convolutional neural networks.* Manuscript submitted for publication.
 
 **Russell, M.**, Wang, P., Liu, S., & Jawahir, I. S. (2023). Mixed-up experience replay for adaptive online condition monitoring. *IEEE Transactions on Industrial Electronics.* [[Publisher](https://ieeexplore.ieee.org/document/10083059), [PDF](files/ALL_22-TIE-4784.pdf)]
