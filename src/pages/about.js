@@ -67,8 +67,8 @@ class About extends React.Component {
         </div>
 
         <p>
-          I'm Emma's fiancé, an Electrical Engineering/Machine Learning PhD Candidate at the University of Kentucky,
-          and recent six-tour software intern at NASA Johnson Space Center.
+          I'm Emma's husband, a Data Scientist for the Cleveland Guardians MLB team,
+          and have my doctorate in Electrical Engineering.
         </p>
         <p>
           I like embedded systems, spaceflight, cosmology, apologetics, music production, The Ohio State Buckeyes, Major League Baseball, machine learning, robots, software development, startups, entrepreneurship, traveling, puns, and coffee.
@@ -79,7 +79,8 @@ class About extends React.Component {
           My deep learning work includes image segmentation, fault monitoring from high-frequency sensing, transfer learning, continual learning, and more with CNNs, RNNs, etc.
         </p>
         <p>
-          I code in Python (PyTorch, PyTorch Lightning, NumPy, Pandas, SciPy, Matplotlib, etc.), some C/C++, MATLAB, Java, Kotlin, &amp; JavaScript (+ a little React).
+          I code in Python (PyTorch, PyTorch Lightning, Keras, NumPy, Pandas, SciPy, Matplotlib, etc.), some C/C++, MATLAB, Java, Kotlin, &amp; JavaScript (+ a little React).
+          I am learning more and more SQL by the hour.
           Clean Architecture is cool.
           I build with Arduino, Raspberry Pi, Anycubic Kossel, Linux, VS Code, and Logic Pro X.
         </p>

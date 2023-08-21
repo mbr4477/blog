@@ -5,12 +5,14 @@ description: The tools and workflows I use at the moment.
 
 ## Notes
 
-I keep some notes as [Zettelkasten](https://zettelkasten.de/posts/overview/) but don't always update it frequently. I don't use Obsidian but stick to [Typora](https://typora.io/), an excellent cross-platform, minimalist, and themable markdown editor. Day to day notes are split between the iPhone Notes app and Google Keep.
+I keep some notes as [Zettelkasten](https://zettelkasten.de/posts/overview/) but don't always update it frequently. I don't use Obsidian but stick to [Typora](https://typora.io/), an excellent cross-platform, minimalist, and themable markdown editor. 
 
-## Task Management
+## Productivity System
 
-I have an approach somewhat similar to Getting Things Done (GTD), I think. I use Trello with lists for an inbox, task backlog, ready to go tasks, things nice to get done today, today's tasks, and then miscellaneous other lists to keep things in one spot (long form notes that should go in my zettelkasten, recipes, etc.).
-All my task cards can have important and/or urgent labels to priortize them.
+I recently switched to using a single Notion page for basically everything:
+inline database of todos, inline database of recipes, shopping list, tracking auto maintenance, storing important values like VIN numbers, license numbers, etc. Once place for everything.
+For tasks, I have an approach somewhat similar to Getting Things Done (GTD), I think. 
+I track items as Not Started, Next, Today, In Progress, and Done and tag them as Important, Urgent, or both.
 
 ## Laptops
 

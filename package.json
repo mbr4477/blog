@@ -26,9 +26,9 @@
     "gatsby-remark-copy-linked-files": "^6.1.0",
     "gatsby-remark-emoji": "0.0.3",
     "gatsby-remark-graphviz": "^5.1.0",
-    "gatsby-remark-images": "^7.1.0",
-    "gatsby-remark-katex": "^7.1.0",
-    "gatsby-remark-prismjs": "^7.1.0",
+    "gatsby-remark-images": "^7.11.0",
+    "gatsby-remark-katex": "^7.11.0",
+    "gatsby-remark-prismjs": "^7.11.0",
     "gatsby-remark-smartypants": "^6.1.0",
     "gatsby-source-filesystem": "^5.1.0",
     "gatsby-transformer-remark": "^6.1.0",
@@ -46,7 +46,7 @@
     "react-markdown": "^8.0.3"
   },
   "devDependencies": {
-    "prettier": "^2.7.1"
+    "prettier": "^3.0.2"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
