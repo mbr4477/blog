@@ -8,7 +8,13 @@ title: Publications
     </a>
 </div>
 
-<h1 style="text-align: center;">2023</h1>
+<h1 style="text-align: center;">2023</h1
+
+**Russell, M.**, & Wang, P. (2023). *Maximizing model generalization for manufacturing with self-supervised learning and federated learning.* Manuscript submitted for publication. [[Preprint](https://arxiv.org/abs/2304.14398)]
+    
+Ippili, S. R., **Russell, M.**, Wang, P., & Herrin, D. W. (2023, May 15-18). *Deep learning based mechanical fault detection and diagnosis of electric motors using directional characteristics of acoustic signals* [Paper presentation]. 2023 INCE-USA NOISE-CON, Grand Rapids, MI.  
+
+**Russell, M. B.** (2023). *Generalizable and adaptable data-driven methods for overcoming barriers to practical industrial condition monitoring.* [Doctoral dissertation, University of Kentucky] UKnowledge. https://uknowledge.uky.edu/ece_etds/190/
 
 Ippili, S., **Russell, M. B.**, Wang, P., & Herrin, D. W. (2023). *Vector based acoustic sensing for mechanical fault diagnosis through convolutional neural networks.* Manuscript submitted for publication.
 
