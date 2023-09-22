@@ -10,7 +10,7 @@ title: Publications
 
 <h1 style="text-align: center;">2023</h1
 
-**Russell, M.**, & Wang, P. (2023). *Maximizing model generalization for manufacturing with self-supervised learning and federated learning.* Manuscript submitted for publication. [[Preprint](https://arxiv.org/abs/2304.14398)]
+**Russell, M.**, & Wang, P. (in press). Maximizing model generalization for machine condition monitoring with self-supervised learning and federated learning. *Journal of Manufacturing Systems*. [[Preprint](https://arxiv.org/abs/2304.14398)]
     
 Ippili, S. R., **Russell, M.**, Wang, P., & Herrin, D. W. (2023, May 15-18). *Deep learning based mechanical fault detection and diagnosis of electric motors using directional characteristics of acoustic signals* [Paper presentation]. 2023 INCE-USA NOISE-CON, Grand Rapids, MI.  
 
