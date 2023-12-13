@@ -23,7 +23,7 @@ $$
 $$
 where $n_i$ is the player’s “opportunities” (PA for batting) from $i$ years ago  and $x_i$ is the player’s “rate stat” (# / opportunity) from $i$ years ago.
 
-> Juan Soto had 196, 654, and 664 PA in 2020-2023 and hit 13, 29, and 27 HR. His rate stats are then 0.066, 0.044, and 0.041 HR/PA for those three years. His player-level estimate for 2023 would be:
+> Juan Soto had 196, 654, and 664 PA in 2020-2022 and hit 13, 29, and 27 HR. His rate stats are then 0.066, 0.044, and 0.041 HR/PA for those three years. His player-level estimate for 2023 would be:
 > $$
 > \begin{aligned}
 > \text{2023 HR/PA} &= \frac{3(13) + 4(29) + 5(27)}{3(196) + 4(654) + 5(664)} \\
@@ -40,8 +40,6 @@ $$
 $$
 where $x'_i$ is the league-level rate stat.
 
->
->
 >There were 66304, 181115, and 181574 PA in 2020-2022 along with 2304, 5944, and  5215 HR. The league-level rate stats are then 0.035, 0.033, and 0.029. The league-level estimate is then:
 >$$
 >\begin{aligned}
@@ -56,7 +54,7 @@ Somewhat arbitrarily, Marcel calculates the reliability as:
 $$
 \alpha = \frac{3n_3 + 4n_2 + 5n_1}{3n_3 + 4n_2 + 5n_1 + 1200}
 $$
-where the 1200 essentially means we want to add 1200 weighted PA of league-level to the player’s weighted number of PA. The 1200 weighted PA is like 100 PA for each of the past three years since $3(100) + 4(100) + 5(100) = 1200$.
+where the 1200 essentially means we want to add 1200 weighted PAs of league-level performance to the player’s PAs. The 1200 weighted PAs is like 100 PA for each of the past three years since $3(100) + 4(100) + 5(100) = 1200$.
 
 > Juan Soto’s weighted PA is $3(196) + 4(654) + 5(664) = 6524$. His reliability score is then
 > $$
@@ -78,7 +76,7 @@ $$
 $$
 where $x$ is the player’s age.
 
-> Juan Soto was 25 in 2023. His age adjustment is then $0.006 \times (29 - 24) = 0.024$. Adding this to his projected 2023 HR/PA, we get an adjusted rate of 0.066.
+> Juan Soto was 25 in 2023. His age adjustment is then $0.006 \times (29 - 25) = 0.024$. Adding this to his projected 2023 HR/PA, we get an adjusted rate of 0.066.
 
 # Estimating PA and Final Projection
 
@@ -104,6 +102,6 @@ where $n'_i$ is the total PA in the season $i$ years ago. I have two reasons for
 
    We don’t want as much weight on the 2020 season, and weighting by total PA helps account for this. The higher-than-average rate in 2020 pulls the estimate up to 0.032. Including total PA weights gives $[3(2304) + 4(5944) + 5(5215)] / [3(66304) + 4(181115) + 5(181574)] = 0.031$. Without the PA component, the 2020-2023 league-level HR rate would be $[3(0.035) + 4(0.033) + 5(0.029)] / 12 = 0.032$. The higher-than-average rate in 2020 has an outsized affect on the total rate, increasing it by 0.001. 
 
-> For the Juan Soto example, we can use the new 0.031 estimate instead of the previous value of . . . 0.031 ?! Why are the league-level HR values the same despite this change? It’s because Soto is an everyday player, so his PA reflects the total league PA. If the league PA goes up, so does his. If the league PA goes down, his does too. The difference would become more apparent for bench players whose PA more independent from the league PA.
+> For the Juan Soto example, we can use the new 0.031 estimate instead of the previous value of . . . 0.031 ?! Why are the league-level HR/PA values the same despite this change? It’s because Soto is an everyday player, so his PA reflects a relatively fixed proprortion of total league PA. If the league PA goes up 1.5&times;, so does his PA. If the league PA goes down 0.8&times;, his does to by the same proportion. The difference would become more apparent for bench players whose PA more independent from the league PA.
 
 How does this alternate approach change the projections overall? Well, on the Lahman database of batting stats, the correlation between the original Marcel and the alternate Marcel is 0.997, roughly meaning that 99.7% of the variation in the original Marcel is still captured in the alternate version. The biggest difference is 0.76-0.78 HR on players with  the lowest PA (<100). So the alternate version isn’t that different from the original while also being a bit more robust and applicable to rookies.
